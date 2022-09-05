@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="logo">
+        </a>
+        <div class="header__wrapper">
+            <div class="header__title">Main page title</div>
+            <div class="header__body">
+                <div class="header__search">
+                    <form action="#" method="post" name="search-form" class="search-form">
+                        <button class="search-form__btn icon-search"></button>
+                        <input autocomplete='off' type='text' name='form[]' class='search-form__input' placeholder="Search by Candidates, Jobs, Companies">
+                    </form>
+                </div>
+                <div class="header__options">
+                    <div class="header__add icon-plus"></div>
+                    <div class="header__notifications icon-bell"></div>
+                    <div class="header__avatar ibg">
+                        <img src="img/avatar.png" alt="avatar">
+                        <div class="header__account account-header">
+                            <div class="account-header__top">
+                                <div class="account-header__image ibg">
+                                    <img src="img/avatar.png" alt="avatar">
+                                </div>
+                                <div class="account-header__info">
+                                    <div class="account-header__name">Laurel Martin</div>
+                                    <div class="account-header__email">laurel.martin@corecruiter.com</div>
+                                </div>
+                            </div>
+                            <div class="account-header__body">
+                                <a href="/" class="account-header__item icon-profile">Profile</a>
+                                <a href="/" class="account-header__item icon-settings">Setting</a>
+                                <a href="/" class="account-header__item icon-feedback">Give feedback</a>
+                                <a href="/" class="account-header__item icon-help">Help center</a>
+                                <a href="/" class="account-header__item icon-out">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page">
+            <section class="authorization authorization-send">
+                <div class="authorization__container">
+                    <div class="authorization__logo">
+                        <img src="img/send.svg" alt="send">
+                    </div>
+                    <div class="authorization__title">Email sent successfully</div>
+                    <div class="authorization__subtitle">We sent a password reset link to <a href="mailto:demi@gmail.com">demi@gmail.com</a> <br> If you have not received the email, please check your spam folder.</div>
+                    <a href="/" class="authorization__link">Resend email</a>
+                 </div>
+            </section>
+        </main>      
+        <footer class="footer">
+    <div class="footer__container">
+        
+    </div>
+</footer>
+    </div>
+    <div data-popup="angara" class="popup-info">
+    <div class="popup-info__wrapper">
+        <div class="popup-info__top">
+            <div class="popup-info__title">Customize columns</div>
+            <div class="popup-info__close"><span></span></div>
+        </div>
+        <div class="popup-info__content">
+            <form name="popup-info" action="#" method="post" class="popup-info__form form-modal">
+                <input type="text" class="form-modal__input" name="name" placeholder="Ваше Имя" autocomplete="off">
+                <input type="email" class="form-modal__input" name="email" placeholder="Ваш Email" autocomplete="off">
+                <button type="submit" class="form-modal__submit button">Отправить</button>
+            </form>  
+        </div>
+    </div>
+</div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.min.js" integrity="sha512-fRxU3fhg7jWn77+UqkAPkNmnpFAA0IwxT8nysPJ2++WcE0jvaTe7OxC5OH1wiA/grOqgeZreu35nMK/S0qmdkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="js/app.min.js"></script>
+</body>
+</html>
