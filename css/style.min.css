@@ -2196,6 +2196,11 @@ h6 {
   align-items: center;
   background-color: rgba(42, 134, 255, 0.6);
 }
+@media (min-width: 767.98px) {
+  .item-company-active .item-company__check-img {
+    display: none;
+  }
+}
 .item-company-active .item-company__check-img::before {
   color: #ffffff;
 }
