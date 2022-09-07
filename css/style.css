@@ -2525,19 +2525,21 @@ h6 {
     left: -100%;
   }
 }
-.sidebar::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(72, 77, 82, 0.5);
-  transition: all 0.3s ease 0s;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+@media (max-width: 767.98px) {
+  .sidebar::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 77, 82, 0.5);
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .sidebar.sidebar-open {
   left: 0%;
