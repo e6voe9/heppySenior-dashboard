@@ -1454,6 +1454,22 @@ h6 {
   color: #FFFFFF;
 }
 
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 0;
+  background-color: #FFFFFF;
+}
+.header-logo__container {
+  max-width: 1385px;
+}
+.header-logo__logo {
+  width: 144px;
+  height: 20px;
+}
+
 @keyframes load {
   0% {
     opacity: 1;
@@ -1525,7 +1541,7 @@ h6 {
   min-height: 100vh;
   overflow: hidden;
   padding: 20px 0;
-  padding-top: 60px;
+  padding-top: 120px;
 }
 @media (max-width: 479.98px) {
   .authorization {
