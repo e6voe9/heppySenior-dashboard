@@ -2513,6 +2513,7 @@ h6 {
   display: block;
   overflow: hidden;
   flex: 0 0 57px;
+  transition: flex 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
   .sidebar {
@@ -2593,10 +2594,10 @@ h6 {
   background-color: #F3F5F8;
   max-width: 57px;
   width: 100%;
-  transition: all 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
   .sidebar__container {
+    transition: all 0.3s ease 0s;
     width: 57px;
     max-width: unset;
   }
