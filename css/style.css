@@ -1012,7 +1012,7 @@ h6 {
   position: absolute;
   top: 113%;
   right: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .account-header {
@@ -1493,7 +1493,6 @@ h6 {
 .authorization {
   position: relative;
   min-height: 100vh;
-  padding-top: 140px;
   overflow: hidden;
 }
 @media (max-width: 620px) {
