@@ -9,9 +9,58 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <div class="wrapper__inner">
+            <!-- sidebar-open  - class to show sidebar -->
+<sidebar class="sidebar">
+    <div class="sidebar__container">
+        <div class="sidebar__top">
+            <div class="sidebar__burdger"><span></span></div>
+            <div class="sidebar__close icon-double-arrow">Menu</div>
+        </div>
+        <div class="sidebar__wrapper">
+            <div class="sidebar__body">
+                <div class="sidebar__item item-sidebar icon-dashboard">
+                    <div class="item-sidebar__title">Dashboard</div>
+                </div>
+                <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
+                    <div class="item-sidebar__title">Candidates<span>12</span></div>
+                    <span class="item-sidebar__notif"></span>
+                </div>
+                <div class="sidebar__item item-sidebar icon-jobs">
+                    <div class="item-sidebar__title">Vancancies</div>
+                </div>
+                <div class="sidebar__item item-sidebar icon-companies">
+                    <div class="item-sidebar__title">Companies</div>
+                    <span class="item-sidebar__notif"></span>
+                </div>
+                <div class="sidebar__item item-sidebar icon-calendar">
+                    <div class="item-sidebar__title">Calendar<span>3</span></div>
+                </div>
+                <div class="sidebar__item item-sidebar icon-email">
+                    <div class="item-sidebar__title">Email<span>123</span></div>
+                </div>
+                <div class="sidebar__item item-sidebar icon-team">
+                    <div class="item-sidebar__title">Team members</div>
+                </div>
+            </div>
+            <div class="sidebar__bottom">
+                <div class="sidebar__item item-sidebar icon-settings">
+                    <div class="item-sidebar__title">Setting</div>
+                </div>
+                <div class="sidebar__item item-sidebar icon-help">
+                    <div class="item-sidebar__title">Help center</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sidebar>
+            <div class="wrapper__inner-content">
+                <header class="header">
     <div class="header__container">
-        <button class="header__burger"><span></span></button>
+        <button class="header__burger">
+            <span></span>
+            <div class="header__burger-notif">1</div>
+        </button>
         <a href="/" class="header__logo">
             <img src="img/logo.svg" alt="logo">
         </a>
@@ -215,43 +264,45 @@
         </div>
     </div>
 </header>
-        <main class="page">
-            <section class="authorization authorization-main">
-                <div class="authorization-main__container">
-                    <div class="authorization-main__wrapper">
-                        <div class="authorization-main__body">
-                            <div class="authorization__title">Welcome back!</div>
-                            <div class="authorization__subtitle">Enter your credentials to access your account</div>
-                            <form action="#" name="#" class="authorization__form form-authorization">
-                                <label for="authorization-email">
-                                    <div class="form-authorization__label">Email</div>
-                                    <input type="text" class="form-authorization__input form-authorization__input_error" id="authorization-email" name="email" placeholder="name@company.com" autocomplete="off">
-                                    <div class="form-authorization__error-text">Invalid email format</div>
-                                </label>
-                                <label for="authorization-password">
-                                    <div class="form-authorization__label">Password</div>
-                                    <input type="text" class="form-authorization__input" id="authorization-password" name="password" placeholder="Input your password" autocomplete="off">
-                                    <!-- <div class="form-authorization__error-text">Password must be between 8 and 20 characters</div> -->
-                                </label>
-                                <a href="/forgot.html" class="form-authorization__link">Forgot password?</a>
-                                <button type="submit" class="form-authorization__button">Sign in</button>
-                            </form>
+                <main class="page">
+                    <section class="authorization authorization-main">
+                        <div class="authorization-main__container">
+                            <div class="authorization-main__wrapper">
+                                <div class="authorization-main__body">
+                                    <div class="authorization__title">Welcome back!</div>
+                                    <div class="authorization__subtitle">Enter your credentials to access your account</div>
+                                    <form action="#" name="#" class="authorization__form form-authorization">
+                                        <label for="authorization-email">
+                                            <div class="form-authorization__label">Email</div>
+                                            <input type="text" class="form-authorization__input form-authorization__input_error" id="authorization-email" name="email" placeholder="name@company.com" autocomplete="off">
+                                            <div class="form-authorization__error-text">Invalid email format</div>
+                                        </label>
+                                        <label for="authorization-password">
+                                            <div class="form-authorization__label">Password</div>
+                                            <input type="text" class="form-authorization__input" id="authorization-password" name="password" placeholder="Input your password" autocomplete="off">
+                                            <!-- <div class="form-authorization__error-text">Password must be between 8 and 20 characters</div> -->
+                                        </label>
+                                        <a href="/forgot.html" class="form-authorization__link">Forgot password?</a>
+                                        <button type="submit" class="form-authorization__button">Sign in</button>
+                                    </form>
+                                </div>
+                                <div class="authorization__image">
+                                    <img src="img/main-image.svg" alt="men">
+                                </div>
+                    
+                                <div class="authorization__dots authorization__dots_1">
+                                    <img src="img/dots.svg" alt="dots">
+                                </div>
+                                <div class="authorization__dots authorization__dots_2">
+                                    <img src="img/dots.svg" alt="dots">
+                                </div>
+                            </div>
                         </div>
-                        <div class="authorization__image">
-                            <img src="img/main-image.svg" alt="men">
-                        </div>
-            
-                        <div class="authorization__dots authorization__dots_1">
-                            <img src="img/dots.svg" alt="dots">
-                        </div>
-                        <div class="authorization__dots authorization__dots_2">
-                            <img src="img/dots.svg" alt="dots">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+                    </section>
+                </main>   
+            </div>
+        </div>
     </div>
-    
+    <script src="./js/app.min.js"></script>
 </body>
 </html>
