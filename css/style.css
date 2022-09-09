@@ -2754,12 +2754,30 @@ h6 {
   background-color: #FFFFFF;
   transition: right 0.3s ease 0s;
 }
+@media (min-width: 767.98px) {
+  .company-detail::before {
+    content: "";
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 46.3%;
+    height: 100%;
+    background-color: #F3F5F8;
+    transition: right 0.3s ease-in-out 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 @media (min-width: 991.98px) {
   .company-detail-preview {
     width: 72%;
     box-shadow: -2px 4px 15px rgba(72, 77, 82, 0.15);
     overflow: visible;
     right: 0;
+  }
+  .company-detail-preview::before {
+    width: 39.3%;
   }
 }
 @media (min-width: 991.98px) and (max-width: 1200px) {
@@ -2813,6 +2831,16 @@ h6 {
     max-height: 585px;
   }
 }
+@media (min-width: 991.98px) {
+  .company-detail-preview .info-company-details__top {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 991.98px) {
+  .company-detail-preview .info-company-details__back {
+    display: none;
+  }
+}
 @media (min-width: 991.98px) and (max-width: 1350px) {
   .company-detail-preview .item-info-company-vacancies__list {
     column-gap: 10px;
@@ -2834,20 +2862,6 @@ h6 {
 @media (min-width: 991.98px) and (min-width: 767.98px) {
   .company-detail-preview::before {
     position: absolute !important;
-  }
-}
-@media (min-width: 767.98px) {
-  .company-detail::before {
-    content: "";
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 41%;
-    height: 100%;
-    background-color: #F3F5F8;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
   }
 }
 .company-detail__container {
@@ -2884,8 +2898,16 @@ h6 {
     display: none;
   }
 }
-.company-detail-active {
+.company-detail-preview, .company-detail-active {
   right: 0;
+}
+@media (min-width: 767.98px) {
+  .company-detail-preview::before, .company-detail-active::before {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 .info-company-details__top {
