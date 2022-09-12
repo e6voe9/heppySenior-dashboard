@@ -3784,6 +3784,12 @@ input {
   transition: right 0.3s ease 0s;
   padding-left: 55px;
 }
+@media (max-width: 767.98px) {
+  .single-detail {
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+}
 .single-detail-preview {
   top: 0;
   padding-left: 0;
@@ -4258,6 +4264,12 @@ input {
 .vacancies-info-single-details__body {
   max-height: 352px;
   overflow: auto;
+}
+@media (max-width: 767.98px) {
+  .vacancies-info-single-details__body {
+    max-height: unset;
+    overflow: unset;
+  }
 }
 @media (min-width: 767.98px) {
   .vacancies-info-single-details__body .item-messages-single-details {
