@@ -2564,8 +2564,7 @@ input {
   max-height: 573px;
   border: 1px solid #E5E7EB;
   border-radius: 6px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 @media (max-width: 1350px) {
   .table-list__wrapper {
