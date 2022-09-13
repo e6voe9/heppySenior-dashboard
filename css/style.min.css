@@ -3919,7 +3919,7 @@ input {
   .single-detail-preview {
     width: 72%;
     box-shadow: -2px 4px 15px rgba(72, 77, 82, 0.15);
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: auto;
     right: 0;
   }
@@ -4039,6 +4039,11 @@ input {
 .single-detail__container {
   max-width: 1360px;
   padding: 0;
+}
+@media (min-width: 1500px) {
+  .single-detail__container {
+    max-width: unset;
+  }
 }
 .single-detail__wrapper {
   display: flex;
@@ -4496,8 +4501,32 @@ input {
   color: #2A86FF;
 }
 
-.vacancies-info-single-details {
-  padding-bottom: 80px;
+@media (max-width: 767.98px) {
+  .vacancies-info-single-details {
+    padding-bottom: 80px;
+  }
+  .vacancies-info-single-details-messages {
+    background-color: #F3F5F8;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .vacancies-info-single-details-messages .info-single-details__vacancies-item {
+    display: none;
+  }
+  .vacancies-info-single-details-messages .vacancies-info-single-details__triggers {
+    position: sticky;
+    top: -1px;
+    left: 0;
+    z-index: 10;
+    width: 110%;
+    margin: 0 -15px;
+    padding: 15px 15px 0 15px;
+    background-color: #fff;
+  }
+  .vacancies-info-single-details-messages .vacancies-info-single-details__triggers .vacancies-info-single-details__add {
+    display: none;
+  }
 }
 .vacancies-info-single-details__triggers {
   display: flex;
@@ -4520,33 +4549,23 @@ input {
     flex-direction: column;
   }
 }
-@media (max-width: 479.98px) {
-  .vacancies-info-single-details__triggers-messages {
-    position: sticky;
-    top: -1px;
-    left: 0;
-    z-index: 10;
-    width: 110%;
-    margin: 0 -15px;
-    padding: 15px 15px 0 15px;
-    background-color: #fff;
-  }
-  .vacancies-info-single-details__triggers-messages .vacancies-info-single-details__add {
-    display: none;
-  }
-}
 .vacancies-info-single-details__tabs {
-  display: flex;
-  gap: 32px;
-  flex: 1;
-  border-bottom: 1px solid #E5E7EB;
   overflow-x: auto;
   overflow-y: hidden;
-  max-width: 43vw;
+  flex: 1;
+  display: flex;
   gap: 22px;
+  width: 100%;
+  max-width: 44vw;
+  border-bottom: 1px solid #E5E7EB;
 }
 .vacancies-info-single-details__tabs::-webkit-scrollbar {
   display: none;
+}
+@media (max-width: 991.98px) {
+  .vacancies-info-single-details__tabs {
+    max-width: 60vw;
+  }
 }
 @media (max-width: 767.98px) {
   .vacancies-info-single-details__tabs {
