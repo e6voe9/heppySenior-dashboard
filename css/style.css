@@ -315,6 +315,14 @@ textarea {
   font-size: inherit;
   outline: none;
   resize: none;
+  font-size: 14px;
+}
+@media (max-width: 767.98px) {
+  input,
+button,
+textarea {
+    font-size: 16px !important;
+  }
 }
 
 button {
