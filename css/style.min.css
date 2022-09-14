@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-.item-messages-single-details__label::before, .item-table-board__check-img::before, .item-table-list-active .item-table-list__check-img::before, .item-table-list-active .item-table-list__check::before, .search-top-table-list__btn-filter::before, .customize-check__item-active .customize-check__check::before, .link-hover::before, [class*=icon-]:before {
+.item-messages-single-details__label::before, .item-table-board__check-img::before, .item-table-list-active .item-table-list__check-img::before, .item-table-list-active .item-table-list__check::before, .search-top-table-list__btn-filter::before, .customize-check__item-active .customize-check__check::before, .search-block__filter::before, .search-block__close-btn::before, .search-block__search-btn::before, .link-hover::before, [class*=icon-]:before {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
@@ -12,6 +12,26 @@
 
 [class*=icon-]:before {
   display: block;
+}
+
+.icon-birthday:before {
+  content: "\e92d";
+}
+
+.icon-lightning:before {
+  content: "\e92e";
+}
+
+.icon-missed:before {
+  content: "\e92f";
+}
+
+.icon-whatsapp:before {
+  content: "\e930";
+}
+
+.icon-telegram:before {
+  content: "\e931";
 }
 
 .icon-block:before {
@@ -118,7 +138,7 @@
   content: "\e914";
 }
 
-.icon-close-search:before {
+.icon-close-search:before, .search-block__close-btn:before {
   content: "\e912";
 }
 
@@ -126,7 +146,7 @@
   content: "\e90d";
 }
 
-.icon-filter:before, .search-top-table-list__btn-filter:before {
+.icon-filter:before, .search-top-table-list__btn-filter:before, .search-block__filter:before {
   content: "\e90e";
 }
 
@@ -142,7 +162,7 @@
   content: "\e90b";
 }
 
-.icon-search:before {
+.icon-search:before, .search-block__search-btn:before {
   content: "\e90c";
 }
 
@@ -812,6 +832,89 @@ input {
   object-fit: cover;
 }
 
+.search-block {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.search-block__item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  background-color: #ffffff;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  color: #9CA3AF;
+  transition: all 0.3s ease 0s;
+}
+.search-block__search-btn {
+  margin-right: 12px;
+}
+.search-block__input {
+  flex: 1;
+  width: 100%;
+}
+.search-block__close-btn {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  flex: 0 0 16px;
+  height: 16px;
+  background-color: #6B7280;
+  border-radius: 50%;
+}
+.search-block__close-btn::before {
+  color: #ffffff;
+  font-size: 8px;
+}
+.search-block__filter {
+  position: relative;
+  cursor: pointer;
+}
+.search-block__filter::before {
+  color: #6B7280;
+  font-size: 20px;
+}
+.search-block__filter::after {
+  top: -3px;
+  right: -1px;
+}
+
+.plug-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.plug-message__image {
+  width: 100px;
+  height: 100px;
+  flex: 0 0 100px;
+}
+.plug-message__image:not(:last-child) {
+  margin-bottom: 25px;
+}
+.plug-message__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+}
+.plug-message__title:not(:last-child) {
+  margin-bottom: 4px;
+}
+.plug-message__desch {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #374151;
+}
+
 /*----------------------------------Popup---------------------------------------*/
 .customize-popup {
   position: fixed;
@@ -1282,6 +1385,13 @@ input {
 .social-add-company__wrapper input {
   flex: 1;
   border: 0 !important;
+}
+.social-add-company__wrapper .select {
+  border: none;
+  border-right: 1px solid #D1D5DB;
+}
+.social-add-company__wrapper .select__body {
+  z-index: 102;
 }
 .social-add-company__select {
   display: flex;
@@ -5717,6 +5827,211 @@ input {
 .form-messanger-messages-single-details__send::before {
   font-size: 20px;
   color: #fff;
+}
+
+/*-------------------------------Messanger------------------------------------------*/
+.messanger {
+  overflow: hidden;
+}
+.messanger__container {
+  max-width: unset;
+  padding: 0;
+  display: flex;
+}
+.messanger__body {
+  background-color: #F3F5F8;
+  flex: 1;
+}
+.sidebar-messanger {
+  max-width: 365px;
+}
+.sidebar-messanger__header {
+  padding: 16px 25px 0 25px;
+}
+.sidebar-messanger__header .drop-list__icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+.sidebar-messanger__header .search-block__filter._active::before {
+  color: #58A0FF;
+}
+.sidebar-messanger__search-block {
+  width: 100%;
+}
+.sidebar-messanger__search-block:not(:last-child) {
+  margin-bottom: 16px;
+}
+.sidebar-messanger__tabs {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid #E5E7EB;
+  margin: 0 -25px;
+  padding: 0 25px;
+}
+.sidebar-messanger__body {
+  overflow: auto;
+  height: 79.9vh;
+}
+
+.item-sidebar-messanger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 25px;
+  box-shadow: 0px 1px 0px #E5E7EB;
+  transition: background-color 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .item-sidebar-messanger:hover {
+    background-color: #F9FAFB;
+  }
+}
+.item-sidebar-messanger:focus {
+  background-color: #ECF4FF;
+}
+.item-sidebar-messanger__image {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+.item-sidebar-messanger__content {
+  flex: 1;
+}
+.item-sidebar-messanger__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-sidebar-messanger__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-direction: row-reverse;
+  font-weight: 500;
+  line-height: 157%;
+}
+.item-sidebar-messanger__title::before {
+  color: #9CA3AF;
+}
+.item-sidebar-messanger__date {
+  font-size: 12px;
+  line-height: 167%;
+  color: #6B7280;
+}
+.item-sidebar-messanger__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-sidebar-messanger__descr {
+  font-size: 12px;
+  line-height: 150%;
+  color: #6B7280;
+}
+.item-sidebar-messanger__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  background-color: #EF4444;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #FFFFFF;
+}
+.item-sidebar-messanger__status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 8px;
+  border-radius: 63px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 160%;
+}
+.item-sidebar-messanger__status_yellow {
+  background-color: #FAF0D0;
+  color: #DB9307;
+}
+.item-sidebar-messanger__status_blue {
+  background-color: #DBEAFF;
+  color: #1071F0;
+}
+.item-sidebar-messanger__status_purple {
+  background-color: #DDD6FE;
+  color: #7C3AED;
+}
+.item-sidebar-messanger__status_red {
+  background-color: #FFD9CD;
+  color: #FF4910;
+}
+.item-sidebar-messanger__status_green {
+  background-color: #CEFBE7;
+  color: #00A45B;
+}
+
+.top-messanger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+}
+.top-messanger__main {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.top-messanger__person {
+  display: flex;
+  align-items: center;
+}
+.top-messanger__avatar {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+.top-messanger__avatar:not(:last-child) {
+  margin-right: 12px;
+}
+.top-messanger__name {
+  font-weight: 500;
+  line-height: 157%;
+}
+.top-messanger__info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.top-messanger__info-image {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+.top-messanger__number {
+  font-size: 12px;
+  line-height: 167%;
+  color: #6B7280;
+  font-weight: 400;
+  transition: color 0.3s ease 0s;
+}
+.top-messanger__call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
+  background-color: #ECF4FF;
+}
+.top-messanger__call::before {
+  color: #2A86FF;
+  font-size: 18px;
 }
 
 .sidebar {
