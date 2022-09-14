@@ -1222,8 +1222,10 @@
             </div>
         </div>
         <div class="customize-popup__bottom">
-            <button class="customize-popup__reset button-border">Reset to Default</button>
-            <button class="customize-popup__apply button-primary">Apply Columns</button>
+            <div class="customize-popup__bottom-triggers">
+                <button class="customize-popup__reset button-border">Reset to Default</button>
+                <button class="customize-popup__apply button-primary">Apply Columns</button>
+            </div>
         </div>
     </div>
     <div style="display: none;" class="customize-popup__discard discard-popup">
@@ -1444,6 +1446,115 @@
             <button class="add-popup__add button-primary">Add</button>
         </div>
     </div>
+</div>
+
+<div class="customize-popup"> 
+    <div class="customize-popup__wrapper">
+        <div class="customize-popup__top">
+            <div class="customize-popup__title">Source for send</div>
+            <button class="customize-popup__close icon-close"></button>
+        </div>
+        <div class="customize-popup__body source-customize-popup">
+            <div class="source-customize-popup__socials">
+                <div class="source-customize-popup__social">
+                    <div class="source-customize-popup__social-image ibg-icon">
+                        <img src="img/socials/whatsapp.svg" alt="w">
+                    </div>
+                    WhatsApp
+                </div>
+                <div class="source-customize-popup__social">
+                    <div class="source-customize-popup__social-image ibg-icon">
+                        <img src="img/socials/telegram.svg" alt="t">
+                    </div>
+                    Telegram
+                </div>
+                <div class="source-customize-popup__social">
+                    <div class="source-customize-popup__social-image ibg-icon">
+                        <img src="img/socials/email.svg" alt="e">
+                    </div>
+                    Email
+                </div>
+            </div>
+            <div class="customize-popup__select select">
+                <div class="select__main">
+                    <div class="select__title">
+                        <div class="select__image ibg-icon">
+                            <img src="img/socials/whatsapp.svg" alt="whatsapp">
+                        </div>
+                        WhatsApp
+                    </div>
+                    <div class="select__icon icon-arrow-small"></div>
+                </div>
+                <div class="select__body">
+                    <div class="select__item select__item-active">
+                        <div class="select__image ibg-icon">
+                            <img src="img/socials/whatsapp.svg" alt="whatsapp">
+                        </div>
+                        WhatsApp
+                    </div>
+                    <div class="select__item">
+                        <div class="select__image ibg-icon">
+                            <img src="img/socials/telegram.svg" alt="telegram">
+                        </div>
+                        Telegram
+                    </div>
+                    <div class="select__item">
+                        <div class="select__image ibg-icon">
+                            <img src="img/socials/email.svg" alt="email">
+                        </div>
+                        Email
+                    </div>
+                </div>
+            </div>
+            <div class="source-customize-popup__main">
+                <div class="source-customize-popup__top">4 account</div>
+                <div class="source-customize-popup__body">
+                    <div class="source-customize-popup__item item-hover">
+                        <div class="source-customize-popup__item-circle"></div>
+                        <div class="source-customize-popup__account">halley-hrteam-support@corecruiter.co</div>
+                    </div>
+                    <div class="source-customize-popup__item _active item-hover">
+                        <div class="source-customize-popup__item-circle"></div>
+                        <div class="source-customize-popup__account">halley-hrteam-support@corecruiter.co</div>
+                    </div>
+                    <div class="source-customize-popup__item item-hover">
+                        <div class="source-customize-popup__item-circle"></div>
+                        <div class="source-customize-popup__account">halley-hrteam-support@corecruiter.co</div>
+                    </div>
+                    <div class="source-customize-popup__item item-hover">
+                        <div class="source-customize-popup__item-circle"></div>
+                        <div class="source-customize-popup__account">halley-hrteam-support@corecruiter.co</div>
+                    </div>
+                </div>
+
+                <!-- <div class="messanger__plug plug-message">
+                    <div class="plug-message__image ibg">
+                        <img src="img/message-error.png" alt="message-error">
+                    </div>
+                    <div class="plug-message__title">No accounts!</div>
+                    <div class="plug-message__descr">When you have messages, you’ll see them here.</div>
+                    <button class="plug-message__btn button-primary">Add account</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="customize-popup__bottom">
+            <span> You can add new channels in <p class="show-more">Settings</p></span>
+            <div class="customize-popup__bottom-triggers">
+                <button class="customize-popup__reset button-border">Cancel</button>
+                <button class="customize-popup__apply button-primary">Choose</button>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" class="customize-popup__discard discard-popup">
+        <div class="discard-popup__wrapper">
+            <div class="discard-popup__title">Discard changes?</div>
+            <div class="discard-popup__text">Do you want to discard edits or continue editing?</div>
+            <div class="discard-popup__buttons">
+                <button class="discard-popup__button button-border" type="button">Cancel</button>
+                <button class="discard-popup__button button-primary" type="button">Continue editing</button>
+            </div>
+        </div>
+    </div>  
 </div>
     <script src="./js/app.min.js"></script>
 </body>
