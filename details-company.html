@@ -937,10 +937,10 @@
 <div class="add-popup add-popup-candidate">
     <div class="add-popup__wrapper">
         <div class="add-popup__top">
-            <div class="add-popup__title">Add company</div>
+            <div class="add-popup__title">Add candidate</div>
             <div class="add-popup__close icon-close"></div>
         </div>
-        <form action="#" method="post" name="add-company" class="add-popup__form">
+        <form action="#" method="post" name="add-candidate" class="add-popup__form">
             <div class="add-popup__upload-block">
                 <div class="add-popup__upload-image ibg">
                     <img src="img/upload.png" alt="upload">
@@ -953,36 +953,48 @@
             <div class="add-popup__tab _active">
                 <div class="add-popup__tab-title icon-triagle">Personal Information</div>
                 <div class="add-popup__tab-body">
-                    <label for="company-name">
+                    <label for="candidate-name">
                         <div class="add-popup__label">Full name <span>*</span></div>
-                        <input type="text" name="form[]" id="company-name" placeholder="Input company name" autocomplete="off">
+                        <input type="text" name="form[]" id="candidate-name" placeholder="Input candidate name" autocomplete="off">
                     </label>
                     <div class="add-popup__column">
-                        <label for="company-website">
+                        <label for="candidate-email">
                             <div class="add-popup__label">Email <span>*</span></div>
-                            <input type="text" name="form[]" id="company-website" placeholder="Input email" autocomplete="off">
+                            <input type="text" name="form[]" id="candidate-email" placeholder="Input email" autocomplete="off">
                         </label>
-                        <label for="company-city">
+                        <label for="candidate-phone">
                             <div class="add-popup__label">Phone number <span>*</span></div>
-                            <input type="text" name="form[]" id="company-city" placeholder="Search column" autocomplete="off">
+                            <div class="add-popup__phone-field">
+                                <div class="select">
+                                    <div class="select__main">
+                                        <div class="select__title">US</div>
+                                        <div class="select__icon icon-arrow-small"></div>
+                                    </div>
+                                    <div class="select__body">
+                                        <div class="select__item">RU</div>
+                                        <div class="select__item">UA</div>
+                                    </div>
+                                </div>
+                                <input type="text" name="form[]" id="candidate-phone" placeholder="+1 (555) 987-6543" autocomplete="off">
+                            </div>
                         </label>
                     </div>
                     <div class="add-popup__column">
-                        <label for="company-website">
+                        <label for="candidate-job">
                             <div class="add-popup__label">Job title <span>*</span></div>
-                            <input type="text" name="form[]" id="company-website" placeholder="Input job title" autocomplete="off">
+                            <input type="text" name="form[]" id="candidate-job" placeholder="Input job title" autocomplete="off">
                         </label>
-                        <label for="company-city">
+                        <label for="candidate-name">
                             <div class="add-popup__label">Company name</div>
-                            <input type="text" name="form[]" id="company-city" placeholder="Input company name" autocomplete="off">
+                            <input type="text" name="form[]" id="candidate-name" placeholder="Input company name" autocomplete="off">
                         </label>
                     </div>
                     <div class="add-popup__column">
-                        <label for="company-website">
+                        <label for="candidate-website">
                             <div class="add-popup__label">City</div>
-                            <input type="text" name="form[]" id="company-website" placeholder="Input city" autocomplete="off">
+                            <input type="text" name="form[]" id="candidate-website" placeholder="Input city" autocomplete="off">
                         </label>
-                        <label for="company-city">
+                        <label for="candidate-city">
                             <div class="add-popup__label">Total experience (Years)</div>
                             <div class="select">
                                 <div class="select__main">
@@ -1002,13 +1014,13 @@
                         <div class="add-popup__checkout"></div>
                         <input type="checkbox" id="willing" name="form[]"  autocomplete="off">
                     </label>
-                    <label for="company-about">
+                    <label for="candidate-about">
                         <div class="add-popup__label">Full address</div>
-                        <textarea name="form[]" id="company-about" placeholder="Full address"></textarea>
+                        <textarea name="form[]" id="candidate-about" placeholder="Full address"></textarea>
                     </label>
-                    <label for="company-address">
+                    <label for="candidate-address">
                         <div class="add-popup__label">Summary</div>
-                        <textarea name="form[]" id="company-adress" placeholder="Something about the candidate"></textarea>
+                        <textarea name="form[]" id="candidate-adress" placeholder="Something about the candidate"></textarea>
                     </label>
                 </div>
             </div>
@@ -1016,7 +1028,7 @@
                 <div class="add-popup__tab-title icon-triagle">Academic Information</div>
                 <div class="add-popup__tab-body">
                     <div class="add-popup__column">
-                        <label for="company-city">
+                        <label for="candidate-city">
                             <div class="add-popup__label">Educational Qualification</div>
                             <div class="select">
                                 <div class="select__main">
@@ -1030,9 +1042,9 @@
                                 </div>
                             </div>
                         </label>
-                        <label for="company-website">
+                        <label for="candidate-website">
                             <div class="add-popup__label">Educational Specialization</div>
-                            <input type="text" name="form[]" id="company-website" placeholder="Input educational specialization" autocomplete="off">
+                            <input type="text" name="form[]" id="candidate-website" placeholder="Input educational specialization" autocomplete="off">
                         </label>
                     </div>
                 </div>
