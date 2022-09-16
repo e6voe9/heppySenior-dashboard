@@ -486,7 +486,6 @@
     </div>
 </div>
 
-<!-- add-popup-active - class -->
 <div class="add-popup add-popup-candidate">
     <div class="add-popup__wrapper">
         <div class="add-popup__top">
@@ -624,6 +623,87 @@
         </div>
     </div>
 </div>
+
+<div id="popup-vacancy" class="add-popup add-popup-vacancy">
+    <div class="add-popup__wrapper">
+        <div class="add-popup__top">
+            <div class="add-popup__title">Add Vacancy</div>
+            <div class="add-popup__close icon-close"></div>
+        </div>
+        <form action="#" method="post" name="add-vacancy" class="add-popup__form">
+            <div class="add-popup__upload-block">
+                <div class="add-popup__upload-image ibg">
+                    <img src="img/upload.png" alt="upload">
+                </div>
+                <label for="upload-add">
+                    <div class="add-popup__upload">Upload</div>
+                    <input type="file" name="form[]" id="upload-add" placeholder="write..." autocomplete="off">
+                </label>
+            </div>
+            <label for="vacancy-name">
+                <div class="add-popup__label">Vacancy Name <span>*</span></div>
+                <input type="text" name="form[]" id="vacancy-name" placeholder="Input vacancy name" autocomplete="off">
+            </label>
+            <div class="add-popup__column">
+                <label for="vacancy-website">
+                    <div class="add-popup__label">Website</div>
+                    <input type="text" name="form[]" id="vacancy-website" placeholder="Search column" autocomplete="off">
+                </label>
+                <label for="vacancy-city">
+                    <div class="add-popup__label">City <span>*</span></div>
+                    <input type="text" name="form[]" id="vacancy-city" placeholder="Search column" autocomplete="off">
+                </label>
+            </div>
+            <label for="vacancy-about">
+                <div class="add-popup__label">About vacancy</div>
+                <textarea name="form[]" id="vacancy-about" placeholder="About vacancy"></textarea>
+            </label>
+            <label for="vacancy-address">
+                <div class="add-popup__label">Full address</div>
+                <textarea name="form[]" id="vacancy-adress" placeholder="Full address"></textarea>
+            </label>
+            <label for="vacancy-about">
+                <div class="add-popup__label">Link for Social media <span>*</span></div>
+                <div class="add-popup__social-line social-add-company">
+                    <div class="social-add-company__wrapper">
+                        <div class="select">
+                            <div class="select__main">
+                                <div class="select__title">Facebook</div>
+                                <div class="select__icon icon-arrow-small"></div>
+                            </div>
+                            <div class="select__body">
+                                <div class="select__item">Item 1</div>
+                                <div class="select__item">Item 2</div>
+                                <div class="select__item">Item 3</div>
+                            </div>
+                        </div>
+                        <input type="text" class="social-add-company__input" name="form[]" placeholder="Input social link" autocomplete="off">
+                    </div>
+                    <button type="button" class="social-add-company__button icon-plus"><span>Add</span></button>
+                </div>
+                <div class="add-popup__item-social item-social-add-company">
+                    <div class="item-social-add-company__image ibg">
+                        <img src="img/facebook.svg" alt="facebook">
+                    </div>
+                    <div class="item-social-add-company__link">https://facebook.com/filavietnam121</div>
+                    <div class="item-social-add-company__bin icon-delete"></div>
+                </div>
+                <div class="add-popup__item-social item-social-add-company">
+                    <div class="item-social-add-company__image ibg">
+                        <img src="img/twitter.svg" alt="twitter">
+                    </div>
+                    <div class="item-social-add-company__link">https://twitter.com/filavietnam</div>
+                    <div class="item-social-add-company__bin icon-delete"></div>
+                </div>
+            </label>
+        </form>
+        <div class="add-popup__bottom">
+            <button class="add-popup__cancel button-border">Cancel</button>
+            <button class="add-popup__add button-primary">Add</button>
+        </div>
+    </div>
+</div>
+
 
 <div id="popup-source" class="customize-popup"> 
     <div class="customize-popup__wrapper">

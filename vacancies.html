@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Company Details</title>
+    <title>Vacancies List</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./files/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon/favicon-16x16.png">
@@ -272,9 +272,545 @@
     </div>
 </header>
                 <main class="page">
-                    <!-- single-detail-active -->
-                    <!-- single-detail-preview -->
-                    <section class="single-detail single-detail-active">
+                    <section class="table-list table-list-vacancies">
+                        <div class="table-list__container">
+                            <div class="table-list__top top-table-list">
+                                <div class="top-table-list__filters">
+                                    <form action="#" method="post" name="search-form" class="search-top-table-list">
+                                        <div class="search-top-table-list__item">
+                                            <button class="search-top-table-list__btn icon-search"></button>
+                                            <input autocomplete='off' type='text' name='form[]' class='search-top-table-list__input' placeholder="Search">
+                                        </div>
+                                    </form>
+                                    <button style="display: none;" class="top-table-list__filter icon-filter"><span>Filter</span></button>
+                                </div>
+                                <div class="top-table-list__button">
+                                    <button class="top-table-list__add top-table-list__add-vacancy icon-plus">Add<span>&nbsp;Vacancy</span></button>
+                                    <button class="top-table-list__catalog icon-thing">
+                                        <div class="item-table-list__tips item-table-list__tips_left icon-triagle">Customize column</div>
+                                    </button>
+                                </div> 
+                            </div>
+                            <div class="table-list__sub">
+                                <div class="table-list__count">11-20 <span>out of</span> 97 <span>results</span></div>
+                                <div class="table-list__select-all">
+                                    <label for="select_1">
+                                        <div class="table-list__select-text">
+                                            Select all
+                                            <div class="table-list__select-check input-check"></div>
+                                        </div>
+                                        <input type="checkbox" name="form[]" id="select_1" placeholder="write..." autocomplete="off">
+                                    </label>
+                                </div>
+                                <div class="table-list__results">
+                                    <div class="table-list__items-count">
+                                        <select name="#" id="#">
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                            <option value="40">40</option>
+                                        </select>
+                                        items/page
+                                    </div>
+                                    <div class="table-list__arrows">
+                                        <button type="button" class="table-list__arrow-button icon-arrow-small"></button>
+                                        <button type="button" class="table-list__arrow-button icon-arrow-small"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-list__wrapper">
+                                <table class="table-list__table" cellpadding = "20" cellspacing = "0">
+                                    <tr class="table-list__tr-main">
+                                        <th>
+                                            <label for="bar-check">
+                                                <div class="bar-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="bar-check" autocomplete="off">
+                                            </label>
+                                        </th>
+                                        <th class="bar-table-list__item">Job name</th>
+                                        <th class="bar-table-list__item display-pc">Status</th>
+                                        <th class="bar-table-list__item display-pc">Company</th>
+                                        <th class="bar-table-list__item display-pc">City</th>
+                                        <th class="bar-table-list__item">Number of Opening</th>
+                                        <th class="bar-table-list__item">Active Candidates</th>
+                                        <th class="bar-table-list__item">Finished</th>
+                                        <th class="bar-table-list__item">Cancelled Candidates</th>
+                                        <th class="bar-table-list__item display-pc">New Candidates</th>
+                                    </tr>   
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__open">
+                                                <span class="icon-arrow-small">Open</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__close">
+                                                <span class="icon-arrow-small">Close</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__cancelled">
+                                                <span class="icon-arrow-small">Cancelled</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__pending">
+                                                <span class="icon-arrow-small">Pending</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__open">
+                                                <span class="icon-arrow-small">Open</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__close">
+                                                <span class="icon-arrow-small">Close</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__cancelled">
+                                                <span class="icon-arrow-small">Cancelled</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                    <tr class="table-list__item item-table-list">
+                                        <td class="item-table-list__label-td">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__check"></div> 
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                        </td>
+                                        <td class="item-table-list__content">
+                                            <label class="item-table-list__label" for="item-table-list_check_1">
+                                                <div class="item-table-list__image ibg">
+                                                    <div class="item-table-list__check-img"></div>
+                                                    <img src="img/company-image.png" alt="img">
+                                                </div>
+                                                <input type="checkbox" name="form[]" id="item-table-list_check_1" autocomplete="off">
+                                            </label>
+                                            <div class="item-table-list__name">
+                                                Full-Stack Developer
+                                                <div class="item-table-list__tips item-table-list__tips_up icon-triagle">Full-Stack Developer</div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            <div class="item-table-list__status item-table-list__pending">
+                                                <span class="icon-arrow-small">Pending</span>
+                                                <div class="drop-list">
+                                                    <div class="drop-list__item drop-list__item-open"><span>Open</span></div>
+                                                    <div class="drop-list__item drop-list__item-close"><span>Close</span></div>
+                                                    <div class="drop-list__item drop-list__item-cancel"><span>Cancel</span></div>
+                                                    <div class="drop-list__item drop-list__item-hover drop-list__item-pending"><span>Pending</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="item-table-list__item-td display-pc">
+                                            LG Vehicle Com...
+                                            <div class="tips-item tips-item_up icon-triagle">LG Vehicle Component Solutions Development Center Vietnam (LG VS DCV)</div>
+                                        </td>
+                                        <td class="item-table-list__city display-pc">
+                                            Kazan
+                                        </td>
+                                        <td class="item-table-list__num display-pc">
+                                            3
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__active">
+                                            <span>Active</span>
+                                            46
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__finished">
+                                            <span>Finished</span>
+                                            2
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__close">
+                                            <span>Cancelled</span>
+                                            58
+                                        </td>
+                                        <td class="item-table-list__item item-table-list__new">
+                                            <span>New</span>
+                                            24          
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="display: none;" class="table-list__bottom bottom-table-list">
+                            <div class="bottom-table-list__item icon-send">Send email</div>
+                            <div class="bottom-table-list__item icon-share">Share</div>
+                            <div class="bottom-table-list__item icon-delete">Delete</div>
+                        </div>
+                    </section>
+                    <section class="single-detail">
                         <div class="single-detail__container">
                             <div class="single-detail__header header-single-detail">
                                 <div class="header-single-detail__arrow-back icon-double-arrow"></div>
@@ -388,8 +924,8 @@
                                                         <div class="item-info-single-vacancies__status item-info-single-vacancies__status-close icon-arrow-small">
                                                             <span>Close</span>
                                                             <div class="drop-list">
-                                                                <div class="drop-list__item drop-list__item-open">Open</div>
-                                                                <div class="drop-list__item drop-list__item-close">Close</div>
+                                                                <div class="drop-list__item">Open</div>
+                                                                <div class="drop-list__item">Close</div>
                                                             </div>
                                                         </div>
                                                         <div class="item-info-single-vacancies__options-more icon-vertical-dots">
@@ -429,8 +965,8 @@
                                                         <div class="item-info-single-vacancies__status item-info-single-vacancies__status-open icon-arrow-small">
                                                             <span>Open</span>
                                                             <div class="drop-list">
-                                                                <div class="drop-list__item drop-list__item-close">Close</div>
-                                                                <div class="drop-list__item drop-list__item-open">Open</div>
+                                                                <div class="drop-list__item">Close</div>
+                                                                <div class="drop-list__item">Open</div>
                                                             </div>
                                                         </div>
                                                         <div class="item-info-single-vacancies__options-more icon-vertical-dots">
@@ -728,7 +1264,7 @@
                             </div>
                         </div>
                     </section>
-                </main>
+                </main>      
             </div>
         </div>
     </div>
