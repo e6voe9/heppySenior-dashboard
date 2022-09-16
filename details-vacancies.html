@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Candidate Details</title>
+    <title>Vacancies Details</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./files/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon/favicon-16x16.png">
@@ -272,7 +272,9 @@
     </div>
 </header>
                 <main class="page">
-                    <section class="single-detail single-detail-candidate single-detail-active">
+                    <!-- single-detail-active -->
+                    <!-- single-detail-preview -->
+                    <section class="single-detail single-detail-vacancies single-detail-active">
                         <div class="single-detail__container">
                             <div class="single-detail__header header-single-detail">
                                 <div class="header-single-detail__arrow-back icon-double-arrow"></div>
@@ -290,21 +292,20 @@
                                     <div class="info-single-details__top">
                                         <div class="info-single-details__back">
                                             <span class="icon-arrow-small"></span>
-                                            Candidates list
+                                            Vacancies list
                                         </div>
                                         <div class="info-single-details__edit-button icon-edit">Edit</div>
-                                        <div class="info-single-details__edit-button icon-vertical-dots"></div>
                                     </div>
                                     <div class="info-single-details__item item-info-single-details">
                                         <div class="item-info-single-details__top">
                                             <div class="item-info-single-details__main">
                                                 <div class="item-info-single-details__logo ibg">
-                                                    <img src="img/avatar.png" alt="printasty">
+                                                    <img src="img/company-image.png" alt="printasty">
                                                 </div>
                                                 <div class="info-single-details__info">
-                                                    <div class="item-info-single-details__title">Laurel Martin</div>
+                                                    <div class="item-info-single-details__title">Full-Stack Developer</div>
                                                     <div class="item-info-single-details__main-info">
-                                                        <div class="item-info-single-details__main-info-item">Senior UI/UX Designer</div>
+                                                        <div class="item-info-single-details__main-info-item">IBM Company</div>
                                                         <div class="item-info-single-details__main-info__wrapper">
                                                             <div class="item-info-single-details__main-info-item">
                                                                 Added by <img src="img/avatar.png" alt="avatar">
@@ -325,29 +326,12 @@
                                                     <div class="select__item">Item 3</div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> 
                                         <div class="item-info-single-details__main-info__wrapper item-info-single-details__main-info__wrapper-mobile">
                                             <div class="item-info-single-details__main-info-item">
                                                 Added by <img src="img/avatar.png" alt="avatar">
                                             </div>
                                             <div class="item-info-single-details__main-info-item">15:30, 05/08/2022</div>
-                                        </div>
-                                        <div class="item-info-single-details__social-block">
-                                            <a href="javascript:void(0);" class="link-hover show-more">
-                                                michael.scott@corecruiter.com
-                                                <div class="tips-item tips-item_up">Copy to clipboard</div>
-                                            </a>
-                                            <a href="javascript:void(0);" class="link-hover show-more">
-                                                (541) 754-3010
-                                                <div class="tips-item tips-item_up">Copy to clipboard</div>
-                                            </a>
-                                            <div class="social-list">
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/facebook.svg" alt="f"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/twitter.svg" alt="t"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/youtube.svg" alt="y"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/linkedin.svg" alt="l"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/reddit.svg" alt="r"></a>
-                                            </div>
                                         </div>
                                         <div class="item-info-single-details__body">
                                             <div class="item-info-single-details__list-wrapper">
@@ -457,12 +441,10 @@
                                             <div class="item-info-single-details__list-show-more show-more">See more</div>
                                         </div>
                                     </div>
-                                    <div class="info-single-details__vacancies vacancies-info-single-details vacancies-info-single-details-messages">
-                                        <div class="vacancies-info-single-details__triggers vacancies-info-single-details__triggers-messages">
+                                    <div class="info-single-details__vacancies vacancies-info-single-details">
+                                        <div class="vacancies-info-single-details__triggers">
                                             <div class="vacancies-info-single-details__tabs">
-                                                <button type="button" class="vacancies-info-single-details__tab tab-item _active">Assigned Jobs <span>12</span></button>
-                                                <button type="button" class="vacancies-info-single-details__tab tab-item">Candidate history</button>
-                                                <button type="button" class="vacancies-info-single-details__tab tab-item">Candidate questions</button>
+                                                <button type="button" class="vacancies-info-single-details__tab tab-item _active">Candidate Pipeline <span>12</span></button>
                                                 <div class="vacancies-info-single-details__tabs-mobile">
                                                     <button type="button" class="vacancies-info-single-details__tab tab-item">All</button>
                                                     <button type="button" class="vacancies-info-single-details__tab tab-item">Notes & Calls</button>
@@ -474,201 +456,53 @@
     
                                                 </div>
                                             </div>
-                                            <button type="button" class="vacancies-info-single-details__add icon-plus button-primary"><span>Assign to job</span></button>
+                                            <button type="button" class="vacancies-info-single-details__add icon-plus button-primary"><span>Assign Candidate</span></button>
+                                        </div>
+                                        <div class="vacancies-info-single-details__switches-wrapper">
+                                            <div class="switch-tabs">
+                                                <div class="switch-tabs__item _active">All Candidate <span>16</span></div>
+                                                <div class="switch-tabs__item">Active<span>24</span></div>
+                                                <div class="switch-tabs__item">Finished<span>3</span></div>
+                                                <div class="switch-tabs__item">Cancelled<span>56</span></div>
+                                                <div class="switch-tabs__item">New<span>18</span></div>
+                                            </div>
                                         </div>
                                         <div class="vacancies-info-single-details__body">
-                                            <div class="info-single-details__vacancies-item item-info-single-assigned">
-                                                <div class="item-info-single-assigned__body">
-                                                    <div class="item-info-single-assigned__image ibg">
-                                                        <img src="img/company-image.png" alt="company">
-                                                    </div>
-                                                    <div class="item-info-single-assigned__content">
-                                                        <div class="item-info-single-assigned__title">Senior Graphic Designer</div>
-                                                        <div class="item-info-single-assigned__subtitle">Printasty</div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-info-single-assigned__triggers">
-                                                    <div class="select">
-                                                        <div class="select__main">
-                                                            <div class="select__title">Select</div>
-                                                            <div class="select__icon icon-arrow-small"></div>
+
+                                            <div class="info-single-details__vacancies-item item-info-single-candidate">
+                                                <div class="item-info-single-candidate__top">
+                                                    <div class="item-info-single-candidate__main">
+                                                        <div class="item-info-single-candidate__image ibg-icon">
+                                                            <img src="img/avatar.png" alt="avatar">
                                                         </div>
-                                                        <div class="select__body">
-                                                            <div class="select__item">Item 1</div>
-                                                            <div class="select__item">Item 2</div>
-                                                            <div class="select__item">Item 3</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-info-single-assigned__options">
-                                                        <button type="button" class="item-info-single-assigned__more icon-vertical-dots"></button>
-                                                        <div class="drop-list">
-                                                            <div class="drop-list__item icon-edit">Edit</div>
-                                                            <div class="drop-list__item icon-delete">Delete</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="info-single-details__vacancies-item item-info-single-assigned">
-                                                <div class="item-info-single-assigned__body">
-                                                    <div class="item-info-single-assigned__image ibg">
-                                                        <img src="img/company-image.png" alt="company">
-                                                    </div>
-                                                    <div class="item-info-single-assigned__content">
-                                                        <div class="item-info-single-assigned__title">Senior Graphic Designer</div>
-                                                        <div class="item-info-single-assigned__subtitle">Printasty</div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-info-single-assigned__triggers">
-                                                    <div class="select">
-                                                        <div class="select__main">
-                                                            <div class="select__title">Select</div>
-                                                            <div class="select__icon icon-arrow-small"></div>
-                                                        </div>
-                                                        <div class="select__body">
-                                                            <div class="select__item">Item 1</div>
-                                                            <div class="select__item">Item 2</div>
-                                                            <div class="select__item">Item 3</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-info-single-assigned__options">
-                                                        <button type="button" class="item-info-single-assigned__more icon-vertical-dots"></button>
-                                                        <div class="drop-list">
-                                                            <div class="drop-list__item icon-edit">Edit</div>
-                                                            <div class="drop-list__item icon-delete">Delete</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="info-single-details__vacancies-item item-info-single-history">
-                                                <div class="item-info-single-history__body">
-                                                    <div class="item-info-single-history__info">Laurel Martin<span>view job</span>Senior UI/UX Designer</div>
-                                                    <div class="item-info-single-history__time">9:11, 20/12/2022</div>
-                                                </div>
-                                            </div>
-                                            <div class="messages-single-details__messanger messanger-messages-single-details">
-                                                <div class="messanger-messages-single-details__date">10 June, 2022</div>
-                                                <div class="messanger-messages-single-details__item">
-                                                    <div class="messanger-messages-single-details__image ibg-icon">
-                                                        <img src="img/avatar.png" alt="avatar">
-                                                    </div>
-                                                    <div class="messanger-messages-single-details__body">
-                                                        <div class="messanger-messages-single-details__info">
-                                                            <span>From WhatsApp 79993334523</span>
-                                                            <span>1:24</span>
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__content">
-                                                            <div class="messanger-messages-single-details__message">Hi!</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="messanger-messages-single-details__item messanger-messages-single-details__item-me">
-                                                    <div class="messanger-messages-single-details__image ibg-icon">
-                                                        <img src="img/avatar-man.png" alt="avatar">
-                                                    </div>
-                                                    <div class="messanger-messages-single-details__body">
-                                                        <div class="messanger-messages-single-details__info">
-                                                            <span>From contact@corecruiter.co</span>
-                                                            <span>1:37</span>
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__content">
-                                                            <div class="messanger-messages-single-details__message">Hey there, do you need any help?</div>
-                                                            <div class="messanger-messages-single-details__message">I’ve recently received your CV</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="messanger-messages-single-details__item">
-                                                    <div class="messanger-messages-single-details__image ibg-icon">
-                                                        <img src="img/avatar.png" alt="avatar">
-                                                    </div>
-                                                    <div class="messanger-messages-single-details__body">
-                                                        <div class="messanger-messages-single-details__info">
-                                                            <span>From WhatsApp 79993334523</span>
-                                                            <span>1:37</span>
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__content">
-                                                            <div class="messanger-messages-single-details__message">Yess, i have some questions about JD</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="messanger-messages-single-details__date">11 June, 2022</div>
-                                                <div class="messanger-messages-single-details__item messanger-messages-single-details__item-me">
-                                                        <div class="messanger-messages-single-details__image ibg-icon">
-                                                            <img src="img/avatar-man.png" alt="avatar">
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__body">
-                                                            <div class="messanger-messages-single-details__info">
-                                                                <span>From contact@corecruiter.co</span>
-                                                                <span>1:37</span>
+                                                        <div class="item-info-single-candidate__content">
+                                                            <div class="item-info-single-candidate__top-info">
+                                                                <div class="item-info-single-candidate__title">Demi Lovato</div>
+                                                                <div class="item-info-single-candidate__date display-pc">Response date 05/08/2022</div>
                                                             </div>
-                                                            <div class="messanger-messages-single-details__content">
-                                                                <div class="messanger-messages-single-details__message">hi Laurel! How are you?</div>
-                                                                <div class="messanger-messages-single-details__images">
-                                                                    <div class="messanger-messages-single-details__img ibg">
-                                                                        <img src="img/message-img.png" alt="img">
-                                                                    </div>
-                                                                    <div class="messanger-messages-single-details__img ibg">
-                                                                        <img src="img/message-img.png" alt="img">
-                                                                    </div>
-                                                                </div>
+                                                            <div class="item-info-single-candidate__list">
+                                                                <div class="item-info-single-candidate__item icon-location">San Francisco</div>
+                                                                <div class="item-info-single-candidate__item icon-jobs">Full-time</div>
+                                                                <a href="tel:8(800)800-80-80" class="item-info-single-candidate__item icon-call">8 (800) 800-80-80</a>
+                                                                <a href="#" download class="item-info-single-candidate__item icon-document">Download CV</a>
                                                             </div>
+                                                            <div class="item-info-single-candidate__state status status_blue">Status</div>
+                                                            <div class="item-info-single-candidate__date display-mobile">Response date 05/08/2022</div>
                                                         </div>
-                                                </div>
-                                                <div class="messanger-messages-single-details__item">
-                                                    <div class="messanger-messages-single-details__image ibg-icon">
-                                                        <img src="img/avatar.png" alt="avatar">
                                                     </div>
-                                                    <div class="messanger-messages-single-details__body">
-                                                        <div class="messanger-messages-single-details__info">
-                                                            <span>From LinkedIn</span>
-                                                            <span>1:37</span>
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__content">
-                                                            <div class="messanger-messages-single-details__message messanger-messages-single-details__message-file">
-                                                                <span class="messanger-messages-single-details__message-file__icon icon-files"></span>
-                                                                <div class="messanger-messages-single-details__message-file__content">
-                                                                    <a href="./files/file.pdf" target="_blank" class="messanger-messages-single-details__message-file__title">Social-media-icon-vector-aivb...</a>
-                                                                    <div class="messanger-messages-single-details__message-file__info">1.6 MB Upload Completed</div>
-                                                                </div>
+                                                    <div class="item-info-single-candidate__options">
+                                                        <div class="item-info-single-candidate__options-more icon-vertical-dots">
+                                                            <div class="drop-list">
+                                                                <div class="drop-list__item icon-edit">Edit</div>
+                                                                <div class="drop-list__item icon-delete">Delete</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="messanger-messages-single-details__item messanger-messages-single-details__item-me">
-                                                    <div class="messanger-messages-single-details__image ibg-icon">
-                                                        <img src="img/avatar-man.png" alt="avatar">
-                                                    </div>
-                                                    <div class="messanger-messages-single-details__body">
-                                                        <div class="messanger-messages-single-details__info">
-                                                            <span>From LinkedIn</span>
-                                                            <span>1:37</span>
-                                                        </div>
-                                                        <div class="messanger-messages-single-details__content">
-                                                            <div class="messanger-messages-single-details__message messanger-messages-single-details__message-file">
-                                                                <span class="messanger-messages-single-details__message-file__icon icon-files"></span>
-                                                                <div class="messanger-messages-single-details__message-file__content">
-                                                                    <a href="./files/file.pdf" target="_blank" class="messanger-messages-single-details__message-file__title">Social-media-icon-vector-aivb...</a>
-                                                                    <div class="messanger-messages-single-details__message-file__info">1.6 MB Upload Completed</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-    
-                                                <form action="#" method="post" id="#" class="messanger-messages-single-details__form form-messanger-messages-single-details">
-                                                    <div class="form-messanger-messages-single-details__area">
-                                                        <input type="text" class="form-messanger-messages-single-details__input" name="form[]" placeholder="Send a message.." autocomplete="off">
-                                                        <label class="form-messanger-messages-single-details__label" for="image-select">
-                                                            <div class="icon-image-picture"></div>
-                                                            <input type="file" class="" id="image-select" name="form[]">
-                                                        </label>
-                                                        <label class="form-messanger-messages-single-details__label" for="file-select">
-                                                            <div class="icon-files"></div>
-                                                            <input type="file" class="" id="file-select" name="form[]">
-                                                        </label>
-                                                    </div>
-                                                    <button type="submit" class="form-messanger-messages-single-details__send icon-send"></button>
-                                                </form>
+                                                
+                                                
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -677,7 +511,6 @@
                                         <div class="switch-tabs">
                                             <div class="switch-tabs__item">All</div>
                                             <div class="switch-tabs__item _active">Notes & Calls</div>
-                                            <div class="switch-tabs__item">Messenger</div>
                                             <div class="switch-tabs__item">Tasks</div>
                                             <div class="switch-tabs__item">Meetings</div>
                                             <div class="switch-tabs__item">Files</div>
@@ -698,7 +531,7 @@
                                         </div>
                                     </div>
                                     <div class="messages-single-details__body">
-                                        <!-- <div class="messages-single-details__item item-messages-single-details item-messages-single-details-note">
+                                        <div class="messages-single-details__item item-messages-single-details item-messages-single-details-note">
                                             <div class="item-messages-single-details__top">
                                                 <div class="item-messages-single-details__inner-top">
                                                     <div class="item-messages-single-details__label">Note</div>
@@ -821,140 +654,6 @@
                                             </div>
                                             <div class="messages-single-details__not-found-title">No notes and calls</div>
                                             <div class="messages-single-details__not-found-text">You'll see Notes & Call logs you add here</div>
-                                        </div> -->
-                                        
-                                        <di class="messages-single-details__messanger messanger-messages-single-details">
-                                            <div class="chat-messanger__date">10 June, 2022</div>
-                                            <div class="chat-messanger__item">
-                                                <div class="chat-messanger__image ibg-icon">
-                                                    <img src="img/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="chat-messanger__body">
-                                                    <div class="chat-messanger__info">
-                                                        <span>From WhatsApp 79993334523</span>
-                                                        <span>1:24</span>
-                                                    </div>
-                                                    <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message">Hi!</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-messanger__item chat-messanger__item-me">
-                                                <div class="chat-messanger__image ibg-icon">
-                                                    <img src="img/avatar-man.png" alt="avatar">
-                                                </div>
-                                                <div class="chat-messanger__body">
-                                                    <div class="chat-messanger__info">
-                                                        <span>From contact@corecruiter.co</span>
-                                                        <span>1:37</span>
-                                                    </div>
-                                                    <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message">Hey there, do you need any help?</div>
-                                                        <div class="chat-messanger__message">I’ve recently received your CV</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-messanger__item">
-                                                <div class="chat-messanger__image ibg-icon">
-                                                    <img src="img/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="chat-messanger__body">
-                                                    <div class="chat-messanger__info">
-                                                        <span>From WhatsApp 79993334523</span>
-                                                        <span>1:37</span>
-                                                    </div>
-                                                    <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message">Yess, i have some questions about JD</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-messanger__date">11 June, 2022</div>
-                                            <div class="chat-messanger__label">
-                                                <div class="chat-messanger__label-body">
-                                                    <i class="icon-calendar"></i>
-                                                    <div class="chat-messanger__label-name">Lilyana Amanda Derva</div>
-                                                    <span>created a meeting</span>
-                                                    <p>1:34</p>
-                                                </div>  
-                                            </div>
-                                            <div class="chat-messanger__item chat-messanger__item-me">
-                                                    <div class="chat-messanger__image ibg-icon">
-                                                        <img src="img/avatar-man.png" alt="avatar">
-                                                    </div>
-                                                    <div class="chat-messanger__body">
-                                                        <div class="chat-messanger__info">
-                                                            <span>From contact@corecruiter.co</span>
-                                                            <span>1:37</span>
-                                                        </div>
-                                                        <div class="chat-messanger__content">
-                                                            <div class="chat-messanger__message">hi Laurel! How are you?</div>
-                                                            <div class="chat-messanger__images">
-                                                                <div class="chat-messanger__img ibg">
-                                                                    <img src="img/message-img.png" alt="img">
-                                                                </div>
-                                                                <div class="chat-messanger__img ibg">
-                                                                    <img src="img/message-img.png" alt="img">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class="chat-messanger__item">
-                                                <div class="chat-messanger__image ibg-icon">
-                                                    <img src="img/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="chat-messanger__body">
-                                                    <div class="chat-messanger__info">
-                                                        <span>From LinkedIn</span>
-                                                        <span>1:37</span>
-                                                    </div>
-                                                    <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message chat-messanger__message-file">
-                                                            <span class="chat-messanger__message-file__icon icon-files"></span>
-                                                            <div class="chat-messanger__message-file__content">
-                                                                <a href="./files/file.pdf" target="_blank" class="chat-messanger__message-file__title">Social-media-icon-vector-aivb...</a>
-                                                                <div class="chat-messanger__message-file__info">1.6 MB Upload Completed</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-messanger__item chat-messanger__item-me">
-                                                <div class="chat-messanger__image ibg-icon">
-                                                    <img src="img/avatar-man.png" alt="avatar">
-                                                </div>
-                                                <div class="chat-messanger__body">
-                                                    <div class="chat-messanger__info">
-                                                        <span>From LinkedIn</span>
-                                                        <span>1:37</span>
-                                                    </div>
-                                                    <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message chat-messanger__message-file">
-                                                            <span class="chat-messanger__message-file__icon icon-files"></span>
-                                                            <div class="chat-messanger__message-file__content">
-                                                                <a href="./files/file.pdf" target="_blank" class="chat-messanger__message-file__title">Social-media-icon-vector-aivb...</a>
-                                                                <div class="chat-messanger__message-file__info">1.6 MB Upload Completed</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat-messanger__arrow-down icon-arrow-left"></div>
-                                            <div class="chat-messanger__bottom"></div>
-                                            <form action="#" method="post" id="#" class="messanger-messages-single-details__form form-messanger-messages-single-details">
-                                                <div class="form-messanger-messages-single-details__area">
-                                                    <input type="text" class="form-messanger-messages-single-details__input" name="form[]" placeholder="Send a message.." autocomplete="off">
-                                                    <label class="form-messanger-messages-single-details__label" for="image-select">
-                                                        <div class="icon-image-picture"></div>
-                                                        <input type="file" class="" id="image-select" name="form[]">
-                                                    </label>
-                                                    <label class="form-messanger-messages-single-details__label" for="file-select">
-                                                        <div class="icon-files"></div>
-                                                        <input type="file" class="" id="file-select" name="form[]">
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="form-messanger-messages-single-details__send icon-send"></button>
-                                            </form>
                                         </div>
                                     </div>
                                 </div>

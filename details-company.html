@@ -274,7 +274,7 @@
                 <main class="page">
                     <!-- single-detail-active -->
                     <!-- single-detail-preview -->
-                    <section class="single-detail single-detail-active">
+                    <section class="single-detail single-detail-company single-detail-active">
                         <div class="single-detail__container">
                             <div class="single-detail__header header-single-detail">
                                 <div class="header-single-detail__arrow-back icon-double-arrow"></div>
@@ -307,10 +307,10 @@
                                                     <div class="item-info-single-details__main-info">
                                                         <div class="item-info-single-details__main-info-item item-info-single-details__main-info-item-location icon-location">San Francisco</div>
                                                         <div class="item-info-single-details__main-info__wrapper">
-                                                            <div class="item-info-single-details__main-info-item item-info-single-details__main-info-item">
+                                                            <div class="item-info-single-details__main-info-item">
                                                                 Added by <img src="img/avatar.png" alt="avatar">
                                                             </div>
-                                                            <div class="item-info-single-details__main-info-item item-info-single-details__main-info-item">15:30, 05/08/2022</div>
+                                                            <div class="item-info-single-details__main-info-item">15:30, 05/08/2022</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -576,12 +576,12 @@
                                 </div>
                                 <div class="single-detail__messages messages-single-details">
                                     <div class="messages-single-details__top">
-                                        <div class="messages-single-details__filters">
-                                            <div class="messages-single-details__filter">All</div>
-                                            <div class="messages-single-details__filter messages-single-details__filter-active">Notes & Calls</div>
-                                            <div class="messages-single-details__filter">Tasks</div>
-                                            <div class="messages-single-details__filter">Meetings</div>
-                                            <div class="messages-single-details__filter">Files</div>
+                                        <div class="switch-tabs">
+                                            <div class="switch-tabs__item">All</div>
+                                            <div class="switch-tabs__item _active">Notes & Calls</div>
+                                            <div class="switch-tabs__item">Tasks</div>
+                                            <div class="switch-tabs__item">Meetings</div>
+                                            <div class="switch-tabs__item">Files</div>
                                         </div>
                                         <div class="messages-single-details__add add-messages-single-details">
                                             <button type="button" class="add-messages-single-details__button button-primary icon-plus">
@@ -933,7 +933,7 @@
     </div>
 </div>
 
-<div class="add-popup add-popup-candidate">
+<div id="popup-candidate" class="add-popup add-popup-candidate">
     <div class="add-popup__wrapper">
         <div class="add-popup__top">
             <div class="add-popup__title">Add candidate</div>
