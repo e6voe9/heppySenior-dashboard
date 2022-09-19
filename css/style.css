@@ -1318,6 +1318,11 @@ i {
 .notification__body {
   flex: 1;
 }
+.notification__icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
 .notification__text {
   font-weight: 500;
   font-size: 14px;
@@ -1335,6 +1340,9 @@ i {
 .notification-success {
   background-color: #EBFFF6;
 }
+.notification-success .notification__icon {
+  background: url("../img/notif-ok.svg") center/cover no-repeat;
+}
 .notification-success .notification__text {
   color: #008047;
 }
@@ -1344,6 +1352,9 @@ i {
 
 .notification-error {
   background-color: #FDF2F2;
+}
+.notification-error .notification__icon {
+  background: url("../img/notif-close.svg") center/cover no-repeat;
 }
 .notification-error .notification__text {
   color: #991B1B;
