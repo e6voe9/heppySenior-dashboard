@@ -287,9 +287,19 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1175px;
+  max-width: 1360px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media (min-width: 1450px) {
+  [class*=__container] {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 2000px) {
+  [class*=__container] {
+    max-width: unset;
+  }
 }
 
 .wrapper {
@@ -1295,14 +1305,13 @@ i {
 
 .notification {
   position: absolute;
-  right: 0px;
+  right: 25px;
   top: 56.5px;
   z-index: 105;
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 100%;
-  max-width: 655px;
+  min-width: 400px;
   padding: 16px;
   border-radius: 4px;
   transition: all 0.3s ease 0s;
@@ -2602,7 +2611,6 @@ i {
 .header__container {
   display: flex;
   align-items: center;
-  max-width: 1360px;
 }
 .header__logo {
   position: relative;
@@ -3751,7 +3759,6 @@ i {
 }
 .table-list__container {
   position: relative;
-  max-width: 1360px;
   overflow: hidden;
 }
 .table-list__top:not(:last-child) {
@@ -5507,13 +5514,7 @@ i {
   }
 }
 .single-detail__container {
-  max-width: 1360px;
   padding: 0;
-}
-@media (min-width: 1450px) {
-  .single-detail__container {
-    max-width: 1920px;
-  }
 }
 .single-detail__wrapper {
   display: flex;
@@ -7601,6 +7602,7 @@ i {
 
 .form-messanger {
   display: flex;
+  align-items: flex-end;
   gap: 9px;
 }
 .form-messanger__current-chat {
@@ -7630,7 +7632,7 @@ i {
 .form-messanger__area {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 8px;
   padding: 8px 15px;
   background: #FFFFFF;
@@ -7642,7 +7644,8 @@ i {
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
-  height: 32px;
+  height: 30px;
+  max-height: 115px;
 }
 .form-messanger__input::placeholder {
   color: #6B7280;
@@ -7651,6 +7654,9 @@ i {
   .form-messanger__input {
     width: 120px;
   }
+}
+.form-messanger__label {
+  padding-bottom: 5px;
 }
 .form-messanger__label div {
   font-size: 19px;
@@ -7675,7 +7681,6 @@ i {
   flex: 0 0 48px;
   background-color: #2A86FF;
   border-radius: 8px;
-  padding: 10px 15px;
 }
 .form-messanger__send::before {
   font-size: 20px;
