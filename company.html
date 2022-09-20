@@ -1206,9 +1206,8 @@
             </div>
         </div>
     </div>
-    <div class="notification notification-success _active">
+    <div class="notification notification-success">
         <div class="notification__icon"></div>
-        <!-- <img src="img/notif-ok.svg" alt="ok"> -->
         <div class="notification__body">
             <div class="notification__text">Your connection was restored</div>
         </div>
@@ -2004,7 +2003,7 @@
     </div>
 </div>
 
-<div id="task-popup" class="customize-popup customize-popup-details-add customize-popup-details-add-note">
+<div id="task-popup" class="customize-popup customize-popup-details-add customize-popup-details-add-note ">
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Add a new task</div>
@@ -2034,17 +2033,24 @@
             </div>
             <div class="customize-popup-details-add__content">
                 <div class="customize-popup-details-add__items">
-                    <div class="customize-popup-details-add__item customize-popup-details-add__item-todo icon-type">
+                    <div class="customize-popup-details-add__item customize-popup-details-add__select customize-popup-details-add__select-type icon-type">
                         Type 
                         <span>
                             <p style="display: none;">Add task type</p>
-                            <div class="customize-popup-details-add__item-value">To-do</div>
+                            <div class="customize-popup-details-add__select__item-value status_blue">To-do</div>
                             <div class="drop-list">
-                                <div class="drop-list__item drop-list__item_red">Item 1</div>
-                                <div class="drop-list__item drop-list__item_red">Item 2</div>
-                                <div class="drop-list__item drop-list__item_red">Item 3</div>
-                                <div class="drop-list__item drop-list__item_red">Item 4</div>
-                                <div class="drop-list__item drop-list__item_red">Item 5</div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_blue">Meeting</div>
+                                </div>
+                                <div class="drop-list__block drop-list__block-active">
+                                    <div class="drop-list__item status_blue">Calls</div>
+                                </div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_blue">Interview</div>
+                                </div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_blue">To-do</div>
+                                </div>
                             </div>
                         </span>
                     </div>
@@ -2123,17 +2129,27 @@
                             </div>
                         </span>
                     </div>
-                    <div class="customize-popup-details-add__item customize-popup-details-add__item-priority icon-priority">
+                    <div class="customize-popup-details-add__item customize-popup-details-add__select icon-priority">
                         Priority
                         <span>
                             <p style="display: none;">Add priority</p>
-                            <div class="customize-popup-details-add__item-priority__item-value customize-popup-details-add__item-priority__item-value-red">High</div>
+                            <div class="customize-popup-details-add__select__item-value status_yellow">High</div>
                             <div class="drop-list">
-                                <div class="drop-list__item drop-list__item_red">Urgent</div>
-                                <div class="drop-list__item drop-list__item_red">High</div>
-                                <div class="drop-list__item drop-list__item_green">Normal</div>
-                                <div class="drop-list__item drop-list__item_blue">Low</div>
-                                <div class="drop-list__item drop-list__item_clear icon-close">Clear</div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_red">Urgent</div>
+                                </div>
+                                <div class="drop-list__block drop-list__block-active">
+                                    <div class="drop-list__item status_yellow">High</div>
+                                </div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_green">Normal</div>
+                                </div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item status_blue">Low</div>
+                                </div>
+                                <div class="drop-list__block">
+                                    <div class="drop-list__item drop-list__item_clear icon-close">Clear</div>
+                                </div>
                             </div>
                         </span>
                     </div>
