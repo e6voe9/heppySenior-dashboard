@@ -18,44 +18,77 @@
     <div class="wrapper">
         <div class="wrapper__inner">
             <!-- sidebar-open  - class to show sidebar -->
+<!-- sidebar-settings  - class to show sidebar settings -->
 <sidebar class="sidebar">
     <div class="sidebar__container">
         <div class="sidebar__top">
             <div class="sidebar__burdger"><span></span></div>
             <div class="sidebar__close icon-double-arrow">Menu</div>
+            <div class="sidebar__back icon-double-arrow">Back<span>&nbsp;to Menu</span></div>
         </div>
         <div class="sidebar__wrapper">
-            <div class="sidebar__body">
-                <div class="sidebar__item item-sidebar icon-dashboard">
-                    <div class="item-sidebar__title">Dashboard</div>
+            <div class="sidebar__main-content">
+                <div class="sidebar__body">
+                    <div class="sidebar__item item-sidebar icon-dashboard">
+                        <div class="item-sidebar__title">Dashboard</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
+                        <div class="item-sidebar__title">Candidates<span>12</span></div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-jobs">
+                        <div class="item-sidebar__title">Vancancies</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-companies">
+                        <div class="item-sidebar__title">Companies</div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-calendar">
+                        <div class="item-sidebar__title">Calendar<span>3</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-email">
+                        <div class="item-sidebar__title">Email<span>123</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-team">
+                        <div class="item-sidebar__title">Team members</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
-                    <div class="item-sidebar__title">Candidates<span>12</span></div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-jobs">
-                    <div class="item-sidebar__title">Vancancies</div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-companies">
-                    <div class="item-sidebar__title">Companies</div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-calendar">
-                    <div class="item-sidebar__title">Calendar<span>3</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-email">
-                    <div class="item-sidebar__title">Email<span>123</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-team">
-                    <div class="item-sidebar__title">Team members</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__item item-sidebar item-sidebar-settings icon-settings">
+                        <div class="item-sidebar__title">Setting</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-help">
+                        <div class="item-sidebar__title">Help center</div>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__bottom">
-                <div class="sidebar__item item-sidebar icon-settings">
-                    <div class="item-sidebar__title">Setting</div>
+            <div class="sidebar__settings">
+                <div class="sidebar__body">
+                    <div class="sidebar__label">Settings</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">My Profile</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active">
+                        <div class="item-sidebar__title">Notifications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Integrations</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Billing</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Applications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Peoples</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar icon-help">
-                    <div class="item-sidebar__title">Help center</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__label">Workspace</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Statises</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -327,22 +360,27 @@
                                             <div class="item-info-single-details__item icon-location">Full Address <span>115 SunWah Tower, Nguyen Hue Street, District 1, Ho Chi Minh City</span></div>
                                             <div class="item-info-single-details__item icon-social">
                                                 Social
-                                                <div class="item-info-single-details__social-list">
-                                                    <a target="_blank" href="facebook.com/kpmgdigital.us" class="ibg">
-                                                        <img src="img/socials/facebook.svg" alt="facebook">
+                                                
+                                                <div class="social-list">
+                                                    <a href="#" target="_blank" class="social-list__item">
+                                                        <img src="img/socials/facebook.svg" alt="f">
                                                         <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">facebook.com/kpmgdigital.us</div>
                                                     </a>
-                                                    <a target="_blank" href="facebook.com/kpmgdigital.us" class="ibg">
-                                                        <img src="img/socials/twitter.svg" alt="twitter">
+                                                    <a href="#" target="_blank" class="social-list__item">
+                                                        <img src="img/socials/twitter.svg" alt="t">
+                                                        <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">twitter.com/kpmgdigital.us</div>
                                                     </a>
-                                                    <a target="_blank" href="facebook.com/kpmgdigital.us" class="ibg">
-                                                        <img src="img/socials/youtube.svg" alt="youtube">
+                                                    <a href="#" target="_blank" class="social-list__item">
+                                                        <img src="img/socials/youtube.svg" alt="y">
+                                                        <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">youtube.com/kpmgdigital.us</div>
                                                     </a>
-                                                    <a target="_blank" href="facebook.com/kpmgdigital.us" class="ibg">
-                                                        <img src="img/socials/linkedin.svg" alt="linkedin">
+                                                    <a href="#" target="_blank" class="social-list__item">
+                                                        <img src="img/socials/linkedin.svg" alt="l">
+                                                        <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">linkedin.com/kpmgdigital.us</div>
                                                     </a>
-                                                    <a target="_blank" href="facebook.com/kpmgdigital.us" class="ibg">
-                                                        <img src="img/socials/reddit.svg" alt="reddit">
+                                                    <a href="#" target="_blank" class="social-list__item">
+                                                        <img src="img/socials/reddit.svg" alt="r">
+                                                        <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">reddit.com/kpmgdigital.us</div>
                                                     </a>
                                                 </div>
                                             </div>
@@ -733,7 +771,7 @@
         </div>
     </div>
     <!-- customize-popup-active - class -->
-<div class="customize-popup"> 
+<div class="customize-popup customize-popup-columns"> 
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Customize columns</div>

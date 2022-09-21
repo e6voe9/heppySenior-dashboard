@@ -18,44 +18,77 @@
     <div class="wrapper">
         <div class="wrapper__inner">
             <!-- sidebar-open  - class to show sidebar -->
+<!-- sidebar-settings  - class to show sidebar settings -->
 <sidebar class="sidebar">
     <div class="sidebar__container">
         <div class="sidebar__top">
             <div class="sidebar__burdger"><span></span></div>
             <div class="sidebar__close icon-double-arrow">Menu</div>
+            <div class="sidebar__back icon-double-arrow">Back<span>&nbsp;to Menu</span></div>
         </div>
         <div class="sidebar__wrapper">
-            <div class="sidebar__body">
-                <div class="sidebar__item item-sidebar icon-dashboard">
-                    <div class="item-sidebar__title">Dashboard</div>
+            <div class="sidebar__main-content">
+                <div class="sidebar__body">
+                    <div class="sidebar__item item-sidebar icon-dashboard">
+                        <div class="item-sidebar__title">Dashboard</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
+                        <div class="item-sidebar__title">Candidates<span>12</span></div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-jobs">
+                        <div class="item-sidebar__title">Vancancies</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-companies">
+                        <div class="item-sidebar__title">Companies</div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-calendar">
+                        <div class="item-sidebar__title">Calendar<span>3</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-email">
+                        <div class="item-sidebar__title">Email<span>123</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-team">
+                        <div class="item-sidebar__title">Team members</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
-                    <div class="item-sidebar__title">Candidates<span>12</span></div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-jobs">
-                    <div class="item-sidebar__title">Vancancies</div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-companies">
-                    <div class="item-sidebar__title">Companies</div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-calendar">
-                    <div class="item-sidebar__title">Calendar<span>3</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-email">
-                    <div class="item-sidebar__title">Email<span>123</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-team">
-                    <div class="item-sidebar__title">Team members</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__item item-sidebar item-sidebar-settings icon-settings">
+                        <div class="item-sidebar__title">Setting</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-help">
+                        <div class="item-sidebar__title">Help center</div>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__bottom">
-                <div class="sidebar__item item-sidebar icon-settings">
-                    <div class="item-sidebar__title">Setting</div>
+            <div class="sidebar__settings">
+                <div class="sidebar__body">
+                    <div class="sidebar__label">Settings</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">My Profile</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active">
+                        <div class="item-sidebar__title">Notifications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Integrations</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Billing</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Applications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Peoples</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar icon-help">
-                    <div class="item-sidebar__title">Help center</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__label">Workspace</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Statises</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,11 +375,26 @@
                                                 <div class="tips-item tips-item_up">Copy to clipboard</div>
                                             </a>
                                             <div class="social-list">
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/facebook.svg" alt="f"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/twitter.svg" alt="t"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/youtube.svg" alt="y"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/linkedin.svg" alt="l"></a>
-                                                <a href="#" target="_blank" class="social-list__item"><img src="img/socials/reddit.svg" alt="r"></a>
+                                                <a href="#" target="_blank" class="social-list__item">
+                                                    <img src="img/socials/facebook.svg" alt="f">
+                                                    <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">facebook.com/kpmgdigital.us</div>
+                                                </a>
+                                                <a href="#" target="_blank" class="social-list__item">
+                                                    <img src="img/socials/twitter.svg" alt="t">
+                                                    <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">twitter.com/kpmgdigital.us</div>
+                                                </a>
+                                                <a href="#" target="_blank" class="social-list__item">
+                                                    <img src="img/socials/youtube.svg" alt="y">
+                                                    <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">youtube.com/kpmgdigital.us</div>
+                                                </a>
+                                                <a href="#" target="_blank" class="social-list__item">
+                                                    <img src="img/socials/linkedin.svg" alt="l">
+                                                    <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">linkedin.com/kpmgdigital.us</div>
+                                                </a>
+                                                <a href="#" target="_blank" class="social-list__item">
+                                                    <img src="img/socials/reddit.svg" alt="r">
+                                                    <div class="item-info-single-details__tips tips-item tips-item_up icon-triagle">reddit.com/kpmgdigital.us</div>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="item-info-single-details__body">
@@ -698,132 +746,7 @@
                                         </div>
                                     </div>
                                     <div class="messages-single-details__body">
-                                        <!-- <div class="messages-single-details__item item-messages-single-details item-messages-single-details-note">
-                                            <div class="item-messages-single-details__top">
-                                                <div class="item-messages-single-details__inner-top">
-                                                    <div class="item-messages-single-details__label">Note</div>
-                                                </div>
-                                                <div class="item-messages-single-details__options">
-                                                    <button type="button" class="item-messages-single-details__more icon-vertical-dots"></button>
-                                                    <div class="drop-list">
-                                                        <div class="drop-list__item icon-edit">Edit</div>
-                                                        <div class="drop-list__item icon-delete">Delete</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-messages-single-details__body">
-                                                <div class="item-messages-single-details__image ibg">
-                                                    <img src="img/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="item-messages-single-details__content">
-                                                    <div class="item-messages-single-details__name">Linda Amanda</div>
-                                                    <div class="item-messages-single-details__descr">
-                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla...
-                                                    </div>
-                                                    <div class="item-messages-single-details__show-more show-more">Show more</div>
-                                                    <div class="item-messages-single-details__date">15:35, 05/08/2022</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="messages-single-details__item item-messages-single-details item-messages-single-details-meetings">
-                                            <div class="item-messages-single-details__top">
-                                                <div class="item-messages-single-details__inner-top">
-                                                    <div class="item-messages-single-details__label">Meetings</div>
-                                                    <div class="item-messages-single-details__job">Job <span>Senior UI/UX Designer</span></div>
-                                                </div>
-                                                <div class="item-messages-single-details__options">
-                                                    <button type="button" class="item-messages-single-details__more icon-vertical-dots"></button>
-                                                    <div class="drop-list">
-                                                        <div class="drop-list__item icon-edit">Edit</div>
-                                                        <div class="drop-list__item icon-delete">Delete</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-messages-single-details__content">
-                                               <div class="item-messages-single-details__name">Phone Interview</div>
-                                                <div class="item-messages-single-details__time">
-                                                    <div class="item-messages-single-details__time-item icon-clock">15:30, 05/08/2022</div>
-                                                    <div class="item-messages-single-details__time-item icon-team">3 attendees</div>      
-                                                </div>
-                                                <div class="item-messages-single-details__descr">
-                                                    Task description minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                </div>
-                                                <div class="item-messages-single-details__bottom">
-                                                    <div class="item-messages-single-details__date">15:35, 05/08/2022</div>
-                                                    <div class="item-messages-single-details__created">Created by <div class="ibg"><img src="img/avatar.png" alt="avatar"></div></div>
-                                                </div >
-                                            </div>
-                                        </div>
-                                        <div class="messages-single-details__item item-messages-single-details item-messages-single-details-file">
-                                            <div class="item-messages-single-details__top">
-                                                <div class="item-messages-single-details__inner-top">
-                                                    <div class="item-messages-single-details__label">File</div>
-                                                </div>
-                                                <button type="button" class="item-messages-single-details__remove icon-delete"></button>
-                                            </div>
-                                            <div class="item-messages-single-details__content">
-                                               <a href="./files/file.pdf" target="_blank" class="item-messages-single-details__name">Demi_lovato_portfolio_graphicdesign.pdf</a>
-                                                <div class="item-messages-single-details__bottom">
-                                                    <div class="item-messages-single-details__date">15:35, 05/08/2022</div>
-                                                    <div class="item-messages-single-details__created">Created by <div class="ibg"><img src="img/avatar.png" alt="avatar"></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="messages-single-details__item item-messages-single-details item-messages-single-details-call">
-                                            <div class="item-messages-single-details__top">
-                                                <div class="item-messages-single-details__inner-top">
-                                                    <div class="item-messages-single-details__label">Call</div>
-                                                    <div class="item-messages-single-details__job">Connected</div>
-                                                </div>
-                                            </div>
-                                            <div class="item-messages-single-details__body">
-                                                <div class="item-messages-single-details__image ibg">
-                                                    <img src="img/avatar.png" alt="avatar">
-                                                </div>
-                                                <div class="item-messages-single-details__content">
-                                                    <div class="item-messages-single-details__name">Linda Amanda</div>
-                                                    <div class="item-messages-single-details__descr">Call to Christopher, Send job offer</div>
-                                                    <div class="item-messages-single-details__date">15:35, 05/08/2022</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="messages-single-details__item item-messages-single-details item-messages-single-details-task">
-                                            <div class="item-messages-single-details__top">
-                                                <div class="item-messages-single-details__inner-top">
-                                                    <div class="item-messages-single-details__label">Task</div>
-                                                    <div class="item-messages-single-details__top-group">
-                                                        <div class="item-messages-single-details__job">Assigned to <div class="ibg"><img src="img/avatar.png" alt="avatar"></div></div>
-                                                        <div class="item-messages-single-details__deadline">Due Date: 12/12/2022</div>
-                                                    </div>
-                                                </div>
-                                                <div class="item-messages-single-details__options">
-                                                    <button type="button" class="item-messages-single-details__more icon-vertical-dots"></button>
-                                                    <div class="drop-list">
-                                                        <div class="drop-list__item icon-edit">Edit</div>
-                                                        <div class="drop-list__item icon-delete">Delete</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-messages-single-details__content">
-                                                <div class="item-messages-single-details__name">Task title</div>
-                                                <div class="item-messages-single-details__descr">
-                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                </div>
-                                                <div class="item-messages-single-details__bottom">
-                                                    <div class="item-messages-single-details__date">15:35, 05/08/2022</div>
-                                                    <div class="item-messages-single-details__created">Created by <div class="ibg"><img src="img/avatar.png" alt="avatar"></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="messages-single-details__not-found">
-                                            <div class="messages-single-details__not-found-img ibg">
-                                                <img src="img/no-found.svg" alt="no-found">
-                                            </div>
-                                            <div class="messages-single-details__not-found-title">No notes and calls</div>
-                                            <div class="messages-single-details__not-found-text">You'll see Notes & Call logs you add here</div>
-                                        </div> -->
-                                        
-                                        <di class="messages-single-details__messanger messanger-messages-single-details">
+                                        <div class="messages-single-details__messanger messanger-messages-single-details">
                                             <div class="chat-messanger__date">10 June, 2022</div>
                                             <div class="chat-messanger__item">
                                                 <div class="chat-messanger__image ibg-icon">
@@ -939,7 +862,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="chat-messanger__arrow-down icon-arrow-left"></div>
                                             <div class="chat-messanger__bottom"></div>
                                             <form action="#" method="post" id="#" class="messanger-messages-single-details__form form-messanger-messages-single-details">
                                                 <div class="form-messanger-messages-single-details__area">
@@ -966,7 +888,7 @@
         </div>
     </div>
     <!-- customize-popup-active - class -->
-<div class="customize-popup"> 
+<div class="customize-popup customize-popup-columns"> 
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Customize columns</div>

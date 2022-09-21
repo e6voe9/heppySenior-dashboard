@@ -18,44 +18,77 @@
     <div class="wrapper">
         <div class="wrapper__inner">
             <!-- sidebar-open  - class to show sidebar -->
+<!-- sidebar-settings  - class to show sidebar settings -->
 <sidebar class="sidebar">
     <div class="sidebar__container">
         <div class="sidebar__top">
             <div class="sidebar__burdger"><span></span></div>
             <div class="sidebar__close icon-double-arrow">Menu</div>
+            <div class="sidebar__back icon-double-arrow">Back<span>&nbsp;to Menu</span></div>
         </div>
         <div class="sidebar__wrapper">
-            <div class="sidebar__body">
-                <div class="sidebar__item item-sidebar icon-dashboard">
-                    <div class="item-sidebar__title">Dashboard</div>
+            <div class="sidebar__main-content">
+                <div class="sidebar__body">
+                    <div class="sidebar__item item-sidebar icon-dashboard">
+                        <div class="item-sidebar__title">Dashboard</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
+                        <div class="item-sidebar__title">Candidates<span>12</span></div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-jobs">
+                        <div class="item-sidebar__title">Vancancies</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-companies">
+                        <div class="item-sidebar__title">Companies</div>
+                        <span class="item-sidebar__notif"></span>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-calendar">
+                        <div class="item-sidebar__title">Calendar<span>3</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-email">
+                        <div class="item-sidebar__title">Email<span>123</span></div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-team">
+                        <div class="item-sidebar__title">Team members</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar item-sidebar-active icon-profile">
-                    <div class="item-sidebar__title">Candidates<span>12</span></div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-jobs">
-                    <div class="item-sidebar__title">Vancancies</div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-companies">
-                    <div class="item-sidebar__title">Companies</div>
-                    <span class="item-sidebar__notif"></span>
-                </div>
-                <div class="sidebar__item item-sidebar icon-calendar">
-                    <div class="item-sidebar__title">Calendar<span>3</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-email">
-                    <div class="item-sidebar__title">Email<span>123</span></div>
-                </div>
-                <div class="sidebar__item item-sidebar icon-team">
-                    <div class="item-sidebar__title">Team members</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__item item-sidebar item-sidebar-settings icon-settings">
+                        <div class="item-sidebar__title">Setting</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar icon-help">
+                        <div class="item-sidebar__title">Help center</div>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__bottom">
-                <div class="sidebar__item item-sidebar icon-settings">
-                    <div class="item-sidebar__title">Setting</div>
+            <div class="sidebar__settings">
+                <div class="sidebar__body">
+                    <div class="sidebar__label">Settings</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">My Profile</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar item-sidebar-active">
+                        <div class="item-sidebar__title">Notifications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Integrations</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Billing</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Applications</div>
+                    </div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Peoples</div>
+                    </div>
                 </div>
-                <div class="sidebar__item item-sidebar icon-help">
-                    <div class="item-sidebar__title">Help center</div>
+                <div class="sidebar__bottom">
+                    <div class="sidebar__label">Workspace</div>
+                    <div class="sidebar__item item-sidebar">
+                        <div class="item-sidebar__title">Statises</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -631,7 +664,6 @@
                                             </div>
                                         </div>
                                         <div class="chat-messanger__date">11 June, 2022</div>
-
                                         <div class="chat-messanger__label">
                                             <div class="chat-messanger__label-body">
                                                 <i class="icon-calendar"></i>
@@ -672,7 +704,6 @@
                                                 <p>1:34</p>
                                             </div>  
                                         </div>
-
                                         <div class="chat-messanger__item chat-messanger__item-me">
                                                 <div class="chat-messanger__image ibg-icon">
                                                     <img src="img/avatar-man.png" alt="avatar">
@@ -683,7 +714,10 @@
                                                         <span>1:37</span>
                                                     </div>
                                                     <div class="chat-messanger__content">
-                                                        <div class="chat-messanger__message">hi Laurel! How are you?</div>
+                                                        <div class="chat-messanger__message">
+                                                            hi Laurel! How are you?
+                                                            <div class="chat-messanger__conection"></div>
+                                                        </div>
                                                         <div class="chat-messanger__images">
                                                             <div class="chat-messanger__img ibg">
                                                                 <img src="img/message-img.png" alt="img">
@@ -691,10 +725,12 @@
                                                             <div class="chat-messanger__img ibg">
                                                                 <img src="img/message-img.png" alt="img">
                                                             </div>
+                                                            <div class="chat-messanger__conection"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                         </div>
+                                        <div class="chat-messanger__unread">Unread message</div>
                                         <div class="chat-messanger__item">
                                             <div class="chat-messanger__image ibg-icon">
                                                 <img src="img/avatar.png" alt="avatar">
@@ -735,8 +771,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="chat-messanger__arrow-down icon-arrow-left"></div>
+                                        
                                     </div>
                                     <form action="#" method="POST" class="messanger__form form-messanger">
                                         <div class="form-messanger__current-chat">
@@ -757,6 +792,7 @@
                                         <button type="submit" class="form-messanger__send icon-send"></button>
                                     </form>
                                 </div>
+                                <div class="messanger__arrow-down icon-arrow-left _active"></div>
                             </div>
                             <div class="messanger__details details-messanger">
                                 <div class="details-messanger__very-top">
@@ -823,7 +859,7 @@
         </div>
     </div>
     <!-- customize-popup-active - class -->
-<div class="customize-popup"> 
+<div class="customize-popup customize-popup-columns"> 
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Customize columns</div>
