@@ -305,24 +305,25 @@
     </div>
 </header>
                 <main class="page">
-                    <section class="profile-settings">
-                        <div class="profile-settings__container">
-                            <div class="profile-settings__top-section display-mobile">
-                                <div class="profile-settings__label">My Profile</div>
-                                <div class="profile-settings__close icon-close"></div>
+                    <section class="settings profile-settings">
+                        <div class="settings__container">
+                            <div class="settings__top-section display-mobile">
+                                <div class="settings__label">My Profile</div>
+                                <div class="settings__close icon-close"></div>
                             </div>
-                            <div class="profile-settings__title display-pc">Profile Settings</div>
+                            <div class="settings__title display-pc">Profile Settings</div>
                             <div class="profile-settings__wrapper">
                                 <div class="profile-settings__user user-profile-settings">
-                                    <div class="user-profile-settings__avatar ibg-icon">
+                                    <label for="user-profile-settings-image" class="user-profile-settings__avatar ibg-icon">
                                         <img src="img/avatar.png" alt="avatar">
-                                    </div>
+                                        <input type="file" name="file" id="user-profile-settings-image">
+                                    </label>
                                     <div class="user-profile-settings__body">
                                         <div class="user-profile-settings__name">Name Surname</div>
                                         <div class="user-profile-settings__role">Role of people</div>
                                     </div>
                                 </div>
-                                <div class="profile-settings__title display-mobile">Profile Settings</div>
+                                <div class="settings__title display-mobile">Profile Settings</div>
                                 <form action="#" method="#" class="profile-settings__form form-profile-settings">
                                     <div class="form-profile-settings__main-block">
                                         <div class="form-profile-settings__body">
@@ -978,7 +979,7 @@
 
 <!--------------- Details page popup --------------->
 
- <div id="note-popup" class="customize-popup customize-popup-details-add">
+<div id="note-popup" class="customize-popup customize-popup-details-add">
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Add a note</div>
@@ -1462,6 +1463,23 @@
         <div class="customize-popup__bottom">
             <button class="customize-popup__cancel button-border">Cancel</button>
             <button class="customize-popup__add button-primary">Create</button>
+        </div>
+    </div>
+</div>
+
+<div id="photo-popup" class="customize-popup customize-popup-photo">
+    <div class="customize-popup__wrapper">
+        <div class="customize-popup__photo">
+            <button type="button" class="customize-popup__photo-item">Delete photo</button>
+            <label for="customize-popup__photo-item-1" class="customize-popup__photo-item">
+                <span>Take a photo</span>
+                <input type="file" name="file" id="customize-popup__photo-item-1" accept="image/*" capture="camera">
+            </label>
+            <label for="customize-popup__photo-item-2" class="customize-popup__photo-item">
+                <span>Choose from gallery</span>
+                <input type="file" name="file" id="customize-popup__photo-item-2">
+            </label>
+            <button class="customize-popup__photo-cancel button-primary">Cancel</button>
         </div>
     </div>
 </div>

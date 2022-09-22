@@ -1301,7 +1301,7 @@
 
 <!--------------- Details page popup --------------->
 
- <div id="note-popup" class="customize-popup customize-popup-details-add">
+<div id="note-popup" class="customize-popup customize-popup-details-add">
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Add a note</div>
@@ -1785,6 +1785,23 @@
         <div class="customize-popup__bottom">
             <button class="customize-popup__cancel button-border">Cancel</button>
             <button class="customize-popup__add button-primary">Create</button>
+        </div>
+    </div>
+</div>
+
+<div id="photo-popup" class="customize-popup customize-popup-photo">
+    <div class="customize-popup__wrapper">
+        <div class="customize-popup__photo">
+            <button type="button" class="customize-popup__photo-item">Delete photo</button>
+            <label for="customize-popup__photo-item-1" class="customize-popup__photo-item">
+                <span>Take a photo</span>
+                <input type="file" name="file" id="customize-popup__photo-item-1" accept="image/*" capture="camera">
+            </label>
+            <label for="customize-popup__photo-item-2" class="customize-popup__photo-item">
+                <span>Choose from gallery</span>
+                <input type="file" name="file" id="customize-popup__photo-item-2">
+            </label>
+            <button class="customize-popup__photo-cancel button-primary">Cancel</button>
         </div>
     </div>
 </div>
