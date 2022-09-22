@@ -4006,7 +4006,7 @@ i {
   border-radius: 6px;
   overflow: auto;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1450px) {
   .table-list__wrapper {
     width: 93vw;
     overflow: auto;
