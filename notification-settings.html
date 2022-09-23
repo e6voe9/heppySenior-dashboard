@@ -1168,7 +1168,7 @@
     </div>
 </div>
 
-<div id="task-popup" class="customize-popup customize-popup-details-add customize-popup-details-add-note ">
+<div id="task-popup" class="customize-popup customize-popup-details-add customize-popup-details-add-note">
     <div class="customize-popup__wrapper">
         <div class="customize-popup__top">
             <div class="customize-popup__title">Add a new task</div>
@@ -1298,23 +1298,25 @@
                         Priority
                         <span>
                             <p style="display: none;">Add priority</p>
-                            <div class="customize-popup-details-add__select__item-value status_yellow">High</div>
-                            <div class="drop-list">
-                                <div class="drop-list__block">
-                                    <div class="drop-list__item status_red">Urgent</div>
-                                </div>
-                                <div class="drop-list__block drop-list__block-active">
-                                    <div class="drop-list__item status_yellow">High</div>
-                                </div>
-                                <div class="drop-list__block">
-                                    <div class="drop-list__item status_green">Normal</div>
-                                </div>
-                                <div class="drop-list__block">
-                                    <div class="drop-list__item status_blue">Low</div>
-                                </div>
-                                <div class="drop-list__block">
-                                    <div class="drop-list__item drop-list__item_clear icon-close">Clear</div>
-                                </div>
+                            <div class="status-drop-list">
+                                <div class="status-drop-list__main status_yellow">High</div>
+                                <ul class="status-drop-list__list">
+                                    <li class="status-drop-list__block">
+                                        <div class="status-drop-list__item status_red">Urgent</div>
+                                    </li>
+                                    <li class="status-drop-list__block _active">
+                                        <div class="status-drop-list__item status_yellow">High</div>
+                                    </li>
+                                    <li class="status-drop-list__block">
+                                        <div class="status-drop-list__item status_green">Normal</div>
+                                    </li>
+                                    <li class="status-drop-list__block">
+                                        <div class="status-drop-list__item status_blue">Low</div>
+                                    </li>
+                                    <li class="status-drop-list__block">
+                                        <div class="status-drop-list__item status-drop-list__item_clear icon-close">Clear</div>
+                                    </li>
+                                </ul>
                             </div>
                         </span>
                     </div>
