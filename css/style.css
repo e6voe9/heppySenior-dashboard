@@ -3441,6 +3441,29 @@ i {
     height: 178px;
   }
 }
+.customize-popup-assign__no-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.customize-popup-assign__no-active-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144%;
+  color: #1F2937;
+}
+.customize-popup-assign__no-active-descr {
+  font-size: 14px;
+  line-height: 157%;
+  color: #374151;
+}
+.customize-popup-assign__no-active-add {
+  padding: 9px 16px;
+  width: unset;
+}
+
 .header {
   width: 100%;
   padding: 12px 0;
