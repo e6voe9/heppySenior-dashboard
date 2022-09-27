@@ -2498,11 +2498,15 @@
         </div>
         <form action="#" method="#" class="customize-popup-details-add__form">
             <div class="customize-popup-details-add__form-title">Attendee description</div>
-            <textarea name="#" id="#" placeholder="Start typing to leave a note" class="customize-popup-details-add__textarea"></textarea>
+            <textarea name="#" id="#" placeholder="Start typing to leave a note" class="customize-popup-details-add__textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad...</textarea>
+            <button class="show-more">Show more</button>
         </form>
         <div class="item-info-single-details__main-info__wrapper">
             <div class="item-info-single-details__main-info-item">
-                Added by <img src="img/avatar.png" alt="avatar">
+                Created by 
+                <div class="item-info-single-details__image ibg-icon">
+                    <img src="img/avatar.png" alt="avatar">
+                </div>
             </div>
             <div class="item-info-single-details__main-info-item">15:30, 05/08/2022</div>
         </div>
@@ -2660,6 +2664,81 @@
         </div>
         <div class="customize-popup__bottom">
             <button class="customize-popup__cancel button-border">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div id="assign-popup" class="customize-popup customize-popup-details-add customize-popup-assign">
+    <div class="customize-popup__wrapper">
+        <div class="customize-popup__top">
+            <div class="customize-popup__title">Assign Candidate to Job</div>
+            <div class="customize-popup__close icon-close"></div>
+        </div>
+        <div class="customize-popup-details-add__wrapper">
+            <div class="customize-popup-assign__body">
+                <div class="customize-popup-assign__label">Assigned to 2 jobs</div>
+                <div class="customize-popup-details-add__body-inner">
+                    <div class="info-single-details__vacancies-item item-info-single-assigned">
+                        <div class="item-info-single-assigned__body">
+                            <div class="item-info-single-assigned__body-inner">
+                                <div class="item-info-single-assigned__image ibg">
+                                    <img src="img/company-image.png" alt="company">
+                                </div>
+                                <div class="item-info-single-assigned__content">
+                                    <div class="item-info-single-assigned__title">Senior Graphic Designer</div>
+                                    <div class="item-info-single-assigned__subtitle">Printasty</div>
+                                </div>
+                            </div>
+                            <button type="button" class="item-info-single-assigned__trash icon-delete"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customize-popup-assign__content">
+                <div class="customize-popup-assign__top">
+                    <div class="search-top-table-list__item">
+                        <button class="search-top-table-list__btn icon-search"></button>
+                        <input autocomplete='off' type='text' name='form[]' class='search-top-table-list__input' placeholder="Search company name, job name">
+                    </div>
+                    <span class="customize-popup-assign__status icon-arrow-small button-border">Status</span>
+                    <div class="drop-list drop-list-dots">
+                        <div class="drop-list__item drop-list__item-open"><span>New task</span></div>
+                        <div class="drop-list__item drop-list__item-close"><span>Complete</span></div>
+                        <div class="drop-list__item drop-list__item-pending"><span>In progress</span></div>
+                        <div class="drop-list__item drop-list__item-hover drop-list__item-cancel"><span>Cancel</span></div>
+                    </div>
+                </div>
+                <div class="customize-popup-details-add__items">
+                    <div class="select-list__item item-select-list">
+                        <label for="select-id-1" class="item-select-list__label">
+                            <div class="input-check icon-good"></div>
+                            <input type="checkbox" id="select-id-1" name="form[]" placeholder="write..." autocomplete="off">
+                        </label>
+                        <div class="item-select-list__body">
+                            <div class="item-select-list__image ibg">
+                                <img src="img/company-image.png" alt="company-image">
+                            </div>
+                            <div class="item-select-list__content">
+                                <div class="item-select-list__title">Software Engineer (C/C++) -...</div>
+                                <div class="item-select-list__descr">LG Vehicle Component Solutions...</div>
+                            </div>
+                        </div>
+                        <div class="item-table-list__status item-table-list__close">
+                            <span class="icon-arrow-small">Complete</span>
+                            <div class="drop-list drop-list-dots">
+                                <div class="drop-list__item drop-list__item-open"><span>New task</span></div>
+                                <div class="drop-list__item drop-list__item-close"><span>Complete</span></div>
+                                <div class="drop-list__item drop-list__item-pending"><span>In progress</span></div>
+                                <div class="drop-list__item drop-list__item-hover drop-list__item-cancel"><span>Cancel</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customize-popup__bottom">
+            <button class="customize-popup__cancel button-border">Cancel</button>
+            <button class="customize-popup__add button-primary">Assign</button>
         </div>
     </div>
 </div>
