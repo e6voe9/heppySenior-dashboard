@@ -199,6 +199,10 @@
   content: "\e914";
 }
 
+.icon-center-line:before {
+  content: "\e941";
+}
+
 .icon-close-search:before, .search-block__close-btn:before {
   content: "\e912";
 }
@@ -4588,13 +4592,10 @@ i {
 .table-list-board .table-list__select-all {
   display: none;
 }
-.table-list-board .button-task-sort {
+.table-list-board.table-list-calendar .button-task-sort {
   display: none;
 }
-.table-list-board .button-task-calendar {
-  display: none;
-}
-.table-list-board .table-list__sub {
+.table-list-board.table-list-calendar .button-task-calendar {
   display: none;
 }
 .table-list-list {
@@ -5341,6 +5342,13 @@ i {
   gap: 10px;
   font-weight: 500;
   color: #6B7280;
+}
+.button-task .select__title {
+  display: flex;
+  align-items: center;
+}
+.button-task .select .button-task__sort {
+  margin-right: 8px;
 }
 .button-task .select__item {
   padding: 5px;
