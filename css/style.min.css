@@ -4951,6 +4951,12 @@ i {
 .table-list__item:nth-child(even) {
   background-color: #F9FAFB;
 }
+.table-list__item:nth-last-child(1) ._active .drop-list,
+.table-list__item:nth-last-child(2) ._active .drop-list,
+.table-list__item:nth-last-child(3) ._active .drop-list {
+  top: auto;
+  bottom: 65%;
+}
 .table-list__board {
   padding-bottom: 40px;
 }
